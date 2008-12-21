@@ -1637,5 +1637,26 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>public-deploy</id>
+<!-- almost works ... also uploads this pom to amplafi.net (proving possible to deploy to different repos ) -->
+            <build>
+                <defaultGoal>deploy</defaultGoal>
+            </build>
+            <modules>
+            <!-- 
+                <module>${amplafi-prefix}-hivemind</module>
+                <module>${amplafi-prefix}-test</module>
+             -->
+                <module>${amplafi-prefix}-json</module>
+                <!-- 
+                <module>${amplafi-prefix}-tapestry-javaforge</module>
+                <module>${amplafi-prefix}-sworddance</module>
+                <module>${amplafi-prefix}-mailet</module>                
+                <module>${amplafi-prefix}-flow-core</module>
+                <module>${amplafi-prefix}-flow-web</module>
+                 -->
+            </modules>
+        </profile>
     </profiles>
 </project>
