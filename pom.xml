@@ -1650,11 +1650,11 @@
              -->
                 <module>amplafi-json</module>
                 <module>amplafi-flow-core</module>
+                <module>amplafi-flow-tapestry4</module>
                 <!-- 
                 <module>${amplafi-prefix}-tapestry-javaforge</module>
                 <module>${amplafi-prefix}-sworddance</module>
                 <module>${amplafi-prefix}-mailet</module>                
-                <module>${amplafi-prefix}-flow-web</module>
                  -->
             </modules>
         </profile>
