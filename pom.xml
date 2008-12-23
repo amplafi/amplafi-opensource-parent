@@ -58,22 +58,6 @@
             </properties>
         </developer>
         <developer>
-            <id>sasha</id>
-            <name>Alexandra Nascheeva</name>
-            <email>nasheeva@gmail.com</email>
-            <url></url>
-            <organization>i.Point</organization>
-            <organizationUrl>http://ipoint.com</organizationUrl>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>+8</timezone>
-            <properties>
-                <skype>alexandra.nascheeva</skype>
-                <icq>341035110</icq>
-            </properties>
-        </developer>
-        <developer>
             <id>aectann</id>
             <name>Konstantin Burov</name>
             <email>aectann@gmail.com</email>
@@ -1644,18 +1628,12 @@
                 <defaultGoal>deploy</defaultGoal>
             </build>
             <modules>
-            <!-- 
-                <module>${amplafi-prefix}-hivemind</module>
-                <module>${amplafi-prefix}-test</module>
-             -->
+                <module>amplafi-hivemind</module>
+                <module>amplafi-sworddance</module>
+                <module>amplafi-tapestry-javaforge</module>
                 <module>amplafi-json</module>
                 <module>amplafi-flow-core</module>
                 <module>amplafi-flow-tapestry4</module>
-                <!-- 
-                <module>${amplafi-prefix}-tapestry-javaforge</module>
-                <module>${amplafi-prefix}-sworddance</module>
-                <module>${amplafi-prefix}-mailet</module>                
-                 -->
             </modules>
         </profile>
     </profiles>
