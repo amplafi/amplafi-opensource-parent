@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: Amplafi configuration
+    Description: none
+-->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <property name="severity" value="warning"/>
+    <module name="TreeWalker">
+        <property name="tabWidth" value="4"/>
+        <module name="FileContentsHolder"/>
+        <module name="CovariantEquals"/>
+        <module name="EqualsHashCode"/>
+        <module name="JavadocStyle"/>
+        <module name="VisibilityModifier">
+            <property name="packageAllowed" value="true"/>
+            <property name="protectedAllowed" value="true"/>
+        </module>
+        <module name="ConstantName"/>
+        <module name="LocalFinalVariableName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="MethodName"/>
+        <module name="PackageName">
+            <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
+        </module>
+        <module name="ParameterName"/>
+        <module name="StaticVariableName">
+            <property name="format" value="^[A-Z][a-zA-Z0-9]+$"/>
+        </module>
+        <module name="TypeName"/>
+        <module name="AvoidStarImport"/>
+        <module name="RedundantImport"/>
+        <module name="IllegalImport"/>
+        <module name="UnusedImports">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="May not be completely accurate -- as the import could be used with in a javadoc comment"/>
+            <property name="severity" value="info"/>
+        </module>
+        <module name="TabCharacter"/>
+        <module name="DefaultComesLast"/>
+        <module name="DoubleCheckedLocking">
+            <property name="severity" value="error"/>
+        </module>
+        <module name="InnerAssignment">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Not advised but o.k."/>
+            <property name="severity" value="info"/>
+        </module>
+        <module name="EmptyStatement"/>
+        <module name="HiddenField">
+            <property name="ignoreConstructorParameter" value="true"/>
+            <property name="ignoreSetter" value="true"/>
+        </module>
+        <module name="MissingSwitchDefault">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.lastEnabledSeverity" value="error"/>
+            <property name="severity" value="info"/>
+        </module>
+        <module name="PackageDeclaration">
+            <property name="severity" value="error"/>
+        </module>
+        <module name="ParameterAssignment">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Not advised but o.k."/>
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.lastEnabledSeverity" value="info"/>
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="RedundantThrows">
+            <property name="allowUnchecked" value="true"/>
+        </module>
+        <module name="SimplifyBooleanExpression"/>
+        <module name="SimplifyBooleanReturn">
+            <property name="severity" value="ignore"/>
+        </module>
+        <module name="StringLiteralEquality">
+            <property name="severity" value="error"/>
+        </module>
+        <module name="NestedIfDepth">
+            <property name="max" value="3"/>
+        </module>
+        <module name="NestedTryDepth">
+            <property name="max" value="2"/>
+        </module>
+        <module name="SuperFinalize"/>
+        <module name="ExplicitInitialization"/>
+        <module name="FinalClass"/>
+        <module name="HideUtilityClassConstructor"/>
+        <module name="InterfaceIsType"/>
+        <module name="FallThrough"/>
+        <module name="MethodParamPad"/>
+        <module name="UnnecessaryParentheses"/>
+        <module name="MultipleVariableDeclarations"/>
+        <module name="MutableException"/>
+        <module name="ArrayTypeStyle"/>
+        <module name="UpperEll"/>
+        <module name="JavadocType">
+            <property name="excludeScope" value="private"/>
+            <property name="scope" value="public"/>
+        </module>
+        <module name="JavadocStyle"/>
+        <!--module name="WriteTag"/-->
+        <module name="NoWhitespaceAfter">
+            <property name="tokens" value="BNOT,DEC,DOT,INC,LNOT,UNARY_MINUS,UNARY_PLUS"/>
+        </module>
+        <module name="NoWhitespaceBefore"/>
+        <module name="TabCharacter"/>
+        <module name="LeftCurly"/>
+        <module name="NeedBraces"/>
+        <module name="TodoComment">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="TODO comments"/>
+            <property name="severity" value="info"/>
+            <property name="format" value="TODO"/>
+        </module>
+        <module name="TodoComment">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="HACK notes need to be fixed as soon as possible"/>
+            <property name="format" value="HACK"/>
+        </module>
+        <module name="TypecastParenPad">
+            <property name="tokens" value="RPAREN,TYPECAST"/>
+        </module>
+        <module name="TrailingComment"/>
+        <module name="Regexp">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Look for disabled testcases"/>
+            <property name="format" value="@Test.*enabled=false"/>
+            <property name="message" value="Disabled Testcase"/>
+            <property name="illegalPattern" value="true"/>
+            <property name="ignoreComments" value="true"/>
+        </module>
+        <module name="Regexp">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="TimeServer used to control clock access."/>
+            <property name="format" value="$Calendar.getInstance()^"/>
+            <property name="message" value="Should be using TimeServer"/>
+            <property name="illegalPattern" value="true"/>
+            <property name="ignoreComments" value="true"/>
+        </module>
+        <module name="Regexp">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Should be using TimeServer"/>
+            <property name="format" value="$new Date()^"/>
+            <property name="message" value="Should be using TimeServer"/>
+            <property name="illegalPattern" value="true"/>
+            <property name="ignoreComments" value="true"/>
+        </module>
+    </module>
+    <module name="PackageHtml">
+        <property name="severity" value="info"/>
+    </module>
+    <module name="SuppressionCommentFilter">
+        <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Enables ignoring checkstyle errors in specific blocks"/>
+    </module>
+</module>
