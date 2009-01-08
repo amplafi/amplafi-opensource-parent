@@ -22,7 +22,7 @@
     </organization>
     <packaging>pom</packaging>
     <scm>
-        <developerConnection>scm:svn:${svn-base}/amplafi-flow/</developerConnection>
+        <developerConnection>scm:svn:${svn-base}/${artifactId}/trunk</developerConnection>
     </scm>
     <developers>
         <developer>
@@ -99,8 +99,8 @@
         </repository>
     </distributionManagement>
     <properties>
-        <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow/</svn-base>
-        
+        <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow</svn-base>
+
         <tapestry-build>4.1.6</tapestry-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
         
@@ -150,8 +150,6 @@
         -->
         <!-- maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build-->
         <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
-
-        <svn-base>https://svn1.hosted-projects.com/transparentpolitics/wireservice</svn-base>
         <maven-war-plugin-build>2.1-alpha-1</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <james-mailet-build>3.0</james-mailet-build>
@@ -1231,7 +1229,7 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${maven-release-plugin-build}</version>
                     <configuration>
-                        <tagBase>${svn-base}/tags/</tagBase>
+                        <tagBase>${svn-base}/${artifactId}/tags/</tagBase>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -1488,7 +1486,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <configuration>
-                    <linkXref>true</linkXref>
+                    <linkXRef>true</linkXRef>
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>50</minimumTokens>
                     <targetJdk>1.5</targetJdk>
