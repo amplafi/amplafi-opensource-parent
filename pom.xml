@@ -94,8 +94,8 @@
     </developers>
     <distributionManagement>
         <repository>
-            <id>wireservice-staging</id>
-            <url>scpexe://amplafi.net/home/upload/repository</url>
+            <id>amplafi.public</id>
+            <url>ftp://amplafi.com/httpdocs/repository</url>
         </repository>
     </distributionManagement>
     <properties>
@@ -107,7 +107,7 @@
         <tacos-build>4.1.2-SNAPSHOT</tacos-build>
         <hivemind-build>1.1.1</hivemind-build>
         <commons-logging-build>1.1</commons-logging-build>
-        <log4j-build>1.2.15</log4j-build>
+        <log4j-build>1.2.14</log4j-build>
         <acegi-security-build>1.0.5</acegi-security-build>
         <hibernate-build>3.4.0-amplafi-SNAPSHOT</hibernate-build>
         <freemarker-build>2.3.10</freemarker-build>
@@ -1097,25 +1097,14 @@
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
-                <!--
-                    !!!!!!!!!!should only be used for non-secret sauce code !!!!!!!!
-                -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <inherited>false</inherited>
-                <configuration>
-                    <altDeploymentRepository>
-                        amplafi.public::default::ftp://amplafi.com/httpdocs/repository
-                    </altDeploymentRepository>
-                </configuration>
+                <inherited>true</inherited>
             </plugin>
             <plugin>
-                <!--
-                    !!!!!!!!!!should only be used for non-secret sauce code !!!!!!!!
-                -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <inherited>false</inherited>
+                <inherited>true</inherited>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -1131,12 +1120,9 @@
                 </executions>
             </plugin>
             <plugin>
-                <!--
-                    !!!!!!!!!!should only be used for non-secret sauce code !!!!!!!!
-                -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <inherited>false</inherited>
+                <inherited>true</inherited>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -1578,12 +1564,13 @@
                 <defaultGoal>deploy</defaultGoal>
             </build>
             <modules>
-                <module>amplafi-hivemind</module>
-                <module>amplafi-sworddance</module>
-                <module>amplafi-tapestry-javaforge</module>
-                <module>amplafi-json</module>
-                <module>amplafi-flow-core</module>
-                <module>amplafi-flow-tapestry4</module>
+                <module>../amplafi-hivemind</module>
+                <module>../amplafi-sworddance</module>
+                <module>../amplafi-tapestry-javaforge</module>
+                <module>../amplafi-json</module>
+                <module>../amplafi-flow-core</module>
+                <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-flow-tapestry4</module>
             </modules>
         </profile>
     </profiles>
