@@ -1302,6 +1302,15 @@
             </extension>
         </extensions>
     </build>
+    <modules>
+        <module>../amplafi-hivemind</module>
+        <module>../amplafi-sworddance</module>
+        <module>../amplafi-tapestry-javaforge</module>
+        <module>../amplafi-json</module>
+        <module>../amplafi-flow-core</module>
+        <module>../amplafi-tapestry4-test</module>
+        <module>../amplafi-flow-tapestry4</module>
+    </modules>
     <pluginRepositories>
         <pluginRepository>
             <!--
@@ -1540,19 +1549,12 @@
         </profile>
         <profile>
             <id>public-deploy</id>
-<!-- almost works ... also uploads this pom to amplafi.net (proving possible to deploy to different repos ) -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+             </activation>
             <build>
                 <defaultGoal>deploy</defaultGoal>
             </build>
-            <modules>
-                <module>../amplafi-hivemind</module>
-                <module>../amplafi-sworddance</module>
-                <module>../amplafi-tapestry-javaforge</module>
-                <module>../amplafi-json</module>
-                <module>../amplafi-flow-core</module>
-                <module>../amplafi-tapestry4-test</module>
-                <module>../amplafi-flow-tapestry4</module>
-            </modules>
         </profile>
     </profiles>
 </project>
