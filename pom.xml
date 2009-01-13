@@ -122,15 +122,15 @@
         <testng-build>5.5</testng-build>
         <commons-lang-build>2.4</commons-lang-build>
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
-        <maven-assembly-plugin-build>2.2-beta-2</maven-assembly-plugin-build>
+        <maven-assembly-plugin-build>2.2-beta-3</maven-assembly-plugin-build>
         <maven-checkstyle-plugin-build>2.2</maven-checkstyle-plugin-build>
-        <maven-clean-plugin-build>2.2</maven-clean-plugin-build>
+        <maven-clean-plugin-build>2.3</maven-clean-plugin-build>
         <maven-compiler-plugin-build>2.0.2</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.0</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.0</maven-dependency-plugin-build>
         <hiveutils-build>0.7.1</hiveutils-build>
-        <maven-deploy-plugin-build>2.3</maven-deploy-plugin-build>
-        <maven-eclipse-plugin-build>2.4</maven-eclipse-plugin-build>
+        <maven-deploy-plugin-build>2.4</maven-deploy-plugin-build>
+        <maven-eclipse-plugin-build>2.5.1</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
         <maven-jar-plugin-build>2.2</maven-jar-plugin-build>
         <maven-jetty-plugin-build>6.1.4</maven-jetty-plugin-build>
@@ -139,9 +139,9 @@
         <jetty-build>5.1.10</jetty-build>
         <buildnumber-maven-plugin-build>1.0-beta-1</buildnumber-maven-plugin-build>
         <maven-project-info-reports-plugin-build>2.1</maven-project-info-reports-plugin-build>
-        <maven-release-plugin-build>2.0-beta-7</maven-release-plugin-build>
+        <maven-release-plugin-build>2.0-beta-8</maven-release-plugin-build>
         <maven-repository-plugin-build>2.1</maven-repository-plugin-build>
-        <maven-resources-plugin-build>2.2</maven-resources-plugin-build>
+        <maven-resources-plugin-build>2.3</maven-resources-plugin-build>
         <maven-source-plugin-build>2.0.4</maven-source-plugin-build>
         <maven-site-plugin-build>2.0-beta-7</maven-site-plugin-build>
         <!--
@@ -150,15 +150,16 @@
         -->
         <!-- maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build-->
         <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
-        <maven-war-plugin-build>2.1-alpha-1</maven-war-plugin-build>
+        <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <james-mailet-build>3.0</james-mailet-build>
         <apache-httpcomponents-build>4.0-beta3</apache-httpcomponents-build>
-        <apache-httpcomponents-client-build>4.0-beta1</apache-httpcomponents-client-build>
+        <apache-httpcomponents-client-build>4.0-beta2</apache-httpcomponents-client-build>
         <google-gdata-build>1.0</google-gdata-build>
         <liquibase-plugin-build>1.8.1.0</liquibase-plugin-build>
         <liquibase-build>1.8.1</liquibase-build>
         <ognl-build>2.7.3</ognl-build>
+        <ehcache-build>1.6.0-beta2</ehcache-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -383,7 +384,7 @@
             <dependency>
                 <groupId>net.sf.ehcache</groupId>
                 <artifactId>ehcache</artifactId>
-                <version>1.6.0-beta1</version>
+                <version>${ehcache-build}</version>
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -405,25 +406,6 @@
                 <artifactId>hibernate-jmx</artifactId>
                 <version>${hibernate-build}</version>
             </dependency>
-            <dependency>
-                <!-- used by liquibase -->
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-commons-annotations</artifactId>
-                <version>${hibernate-build}</version>
-            </dependency>
-            <dependency>
-                <!-- used by liquibase -->
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-annotations</artifactId>
-                <version>${hibernate-build}</version>
-                <exclusions>
-                    <!-- exclude hsqldb because 1.8.0.2 does not exist in public repo -->
-                    <exclusion>
-                        <groupId>hsqldb</groupId>
-                        <artifactId>hsqldb</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <!-- slf4j used by hibernate -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -436,11 +418,6 @@
                 <version>${slf4j-build}</version>
             </dependency>
             <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>3.0.0.ga</version>
-            </dependency>
-            <dependency>
                 <groupId>org.liquibase</groupId>
                 <artifactId>liquibase-core</artifactId>
                 <version>${liquibase-build}</version>
@@ -449,19 +426,6 @@
                 <groupId>net.oauth</groupId>
                 <artifactId>core</artifactId>
                 <version>20080621</version>
-            </dependency>
-            <!--
-                                handles flickr - provisional FROM PAT: IS THIS BEING USED?
-                        -->
-            <dependency>
-                <groupId>com.aetrion</groupId>
-                <artifactId>flickr</artifactId>
-                <version>1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jtb</groupId>
-                <artifactId>quickr</artifactId>
-                <version>0.8.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.xmlrpc</groupId>
@@ -624,34 +588,7 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <dependency>
-                <groupId>com.javaforge.tapestry</groupId>
-                <artifactId>tapestry-prop</artifactId>
-                <version>1.0.0</version>
-                <scope>runtime</scope>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>tapestry</artifactId>
-                        <groupId>tapestry</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <!-- END Tapestry -->
-            <dependency>
-                <groupId>com.caucho</groupId>
-                <artifactId>hessian</artifactId>
-                <version>3.1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>hiveutils</groupId>
-                <artifactId>hiveutils</artifactId>
-                <version>${hiveutils-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>hiveutils</groupId>
-                <artifactId>hiveremoting.caucho</artifactId>
-                <version>${hiveutils-build}</version>
-            </dependency>
             <!-- BEGIN Acegi security -->
             <dependency>
                 <groupId>org.acegisecurity</groupId>
@@ -742,25 +679,9 @@
             </dependency>
             <!-- handles RSS parsing -->
             <dependency>
-                <groupId>rome</groupId>
-                <artifactId>rome</artifactId>
-                <!--  handles bad xml in feed better -->
-                <version>0.9.1-amplafi.1</version>
-            </dependency>
-            <dependency>
                 <groupId>jdom</groupId>
                 <artifactId>jdom</artifactId>
                 <version>1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>rome</groupId>
-                <artifactId>rome-fetcher</artifactId>
-                <version>0.8</version>
-            </dependency>
-            <dependency>
-                <groupId>com.enterprisedt</groupId>
-                <artifactId>edtFTPj</artifactId>
-                <version>1.5.5</version>
             </dependency>
             <!-- Scheduling QUARTZ -->
             <dependency>
@@ -788,11 +709,6 @@
                 <scope>provided</scope>
             </dependency>
             <!-- END jmx -->
-            <dependency>
-                <groupId>aspectj</groupId>
-                <artifactId>aspectj</artifactId>
-                <version>1.6.0</version>
-            </dependency>
             <dependency>
                 <groupId>rhino</groupId>
                 <artifactId>js</artifactId>
@@ -828,81 +744,10 @@
                 <version>${apache-httpcomponents-client-build}</version>
             </dependency>
             <!-- END Apache httpcomponents-->
-            <!--  google gdata libraries -->
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-appsforyourdomain</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-appsforyourdomain-meta</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-base</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-calendar</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-calendar-meta</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-client</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-client-meta</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-codesearch</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-codesearch-meta</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-core</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-photos</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-photos-meta</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.gdata</groupId>
-                <artifactId>gdata-media</artifactId>
-                <version>${google-gdata-build}</version>
-            </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>3.0.1-FINAL</version>
-            </dependency>
-            <dependency>
-                <groupId>com.maxmind</groupId>
-                <artifactId>geoip</artifactId>
-                <version>1.2.2</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -916,12 +761,6 @@
                 <scope>test</scope> </dependency> <dependency> <groupId>httpunit</groupId> <artifactId>httpunit</artifactId>
                 <version>[1.6.2,)</version> <scope>test</scope> </dependency>
             -->
-            <!-- we use dbunit to also dump out/load db objects -->
-            <dependency>
-                <groupId>org.dbunit</groupId>
-                <artifactId>dbunit</artifactId>
-                <version>2.2</version>
-            </dependency>
             <dependency>
                 <groupId>org.easymock</groupId>
                 <artifactId>easymock</artifactId>
@@ -1178,6 +1017,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources-plugin-build}</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                    </configuration>                     
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
