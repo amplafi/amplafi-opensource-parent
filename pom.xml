@@ -156,10 +156,12 @@
         <apache-httpcomponents-build>4.0-beta3</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.0-beta2</apache-httpcomponents-client-build>
         <google-gdata-build>1.0</google-gdata-build>
-        <liquibase-plugin-build>1.8.1.0</liquibase-plugin-build>
-        <liquibase-build>1.8.1</liquibase-build>
+        <liquibase-plugin-build>1.9.0.0</liquibase-plugin-build>
+        <liquibase-build>1.9.0</liquibase-build>
         <ognl-build>2.7.3</ognl-build>
         <ehcache-build>1.6.0-beta2</ehcache-build>
+        <jericho-htmlparser-build>2.6.1</jericho-htmlparser-build>
+        <commons-digester-build>1.8.1</commons-digester-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -173,7 +175,7 @@
             <dependency>
                 <groupId>commons-digester</groupId>
                 <artifactId>commons-digester</artifactId>
-                <version>1.8</version>
+                <version>${commons-digester-build}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>xml-apis</groupId>
@@ -989,6 +991,13 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>${maven-eclipse-plugin-build}</version>
+                    <configuration>
+                      <!-- 
+                      <workspaceCodeStylesURL></workspaceCodeStylesURL>
+                       -->
+                        <buildOutputDirectory>bin</buildOutputDirectory>
+                       
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
