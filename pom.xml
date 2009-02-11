@@ -162,6 +162,7 @@
         <ehcache-build>1.6.0-beta3</ehcache-build>
         <jericho-htmlparser-build>2.6.1</jericho-htmlparser-build>
         <commons-digester-build>1.8.1</commons-digester-build>
+        <pmd-build>4.2.5</pmd-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -882,6 +883,11 @@
                 <artifactId>jxl</artifactId>
                 <version>2.6.3</version>
             </dependency>
+            <dependency>
+                <groupId>pmd</groupId>
+                <artifactId>pmd-jdk14</artifactId>
+                <version>${pmd-build}</version>
+            </dependency> 
         </dependencies>
     </dependencyManagement>
     <repositories>
@@ -1316,7 +1322,7 @@
                     <linkXRef>true</linkXRef>
                     <sourceEncoding>utf-8</sourceEncoding>
                     <minimumTokens>50</minimumTokens>
-                    <targetJdk>1.5</targetJdk>
+                    <targetJdk>1.6</targetJdk>
                 </configuration>
             </plugin>
             <plugin>
