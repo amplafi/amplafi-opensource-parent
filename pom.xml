@@ -1144,6 +1144,33 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <executions>
+                       <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                            <configuration>
+                                <attach>true</attach>
+                            </configuration>
+                        </execution>
+                            <!-- 11 feb 2009: (PAT) Is this necessary?
+                       <execution>
+                            <phase>deploy</phase>
+                            <goals>
+                                <goal>attach-descriptor</goal>
+                            </goals>
+                            <configuration>
+                                <attach>true</attach>
+                            </configuration>
+                        </execution>    
+-->
+                    </executions>      
+                </plugin>
+
             </plugins>
         </pluginManagement>
         <extensions>
