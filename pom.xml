@@ -579,18 +579,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <dependency>
-                <groupId>com.javaforge.tapestry</groupId>
-                <artifactId>tapestry-flash</artifactId>
-                <version>1.0.0</version>
-                <scope>runtime</scope>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>tapestry</artifactId>
-                        <groupId>tapestry</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <!-- END Tapestry -->
             <!-- BEGIN Acegi security -->
             <dependency>
