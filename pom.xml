@@ -133,7 +133,7 @@
         <maven-eclipse-plugin-build>2.5.1</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
         <maven-jar-plugin-build>2.2</maven-jar-plugin-build>
-        <maven-jetty-plugin-build>6.1.4</maven-jetty-plugin-build>
+        <maven-jetty-plugin-build>6.1.15</maven-jetty-plugin-build>
         <!-- jetty-build>6.1.4</jetty-build -->
         <!-- 17 jul 2007 selenium requires this version -->
         <jetty-build>5.1.10</jetty-build>
@@ -153,11 +153,11 @@
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <james-mailet-build>3.0</james-mailet-build>
-        <apache-httpcomponents-build>4.0-beta3</apache-httpcomponents-build>
+        <apache-httpcomponents-build>4.0</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.0-beta2</apache-httpcomponents-client-build>
         <google-gdata-build>1.0</google-gdata-build>
-        <liquibase-plugin-build>1.9.0.0</liquibase-plugin-build>
-        <liquibase-build>1.9.0</liquibase-build>
+        <liquibase-plugin-build>1.9.1.0</liquibase-plugin-build>
+        <liquibase-build>1.9.1</liquibase-build>
         <ognl-build>2.7.3</ognl-build>
         <ehcache-build>1.6.0-beta3</ehcache-build>
         <jericho-htmlparser-build>2.6.1</jericho-htmlparser-build>
@@ -365,7 +365,7 @@
             <dependency>
                 <groupId>org.apache.james</groupId>
                 <artifactId>apache-mime4j</artifactId>
-                <version>0.4</version>
+                <version>0.5</version>
             </dependency>
             <dependency>
                 <groupId>james</groupId>
