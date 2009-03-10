@@ -678,7 +678,7 @@
             <dependency>
                 <groupId>quartz</groupId>
                 <artifactId>quartz</artifactId>
-                <version>1.6.0</version>
+                <version>1.6.5</version>
             </dependency>
             <!-- BEGIN jmx -->
             <dependency>
