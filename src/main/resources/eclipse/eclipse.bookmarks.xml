@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks>
+   <site name="Q4E" url="http://q4e.googlecode.com/svn/trunk/updatesite/" web="false" selected="true" local="false"/>
+   <site name="TestNG" url="http://beust.com/eclipse" web="false" selected="true" local="false"/>
+   <site name="Hibernate tools" url="http://download.jboss.org/jbosstools/updates/stable" web="false" selected="true" local="false"/>
+   <site name="Subclipse update site" url="http://subclipse.tigris.org/update_1.4.x" web="false" selected="false" local="false"/>
+</bookmarks>

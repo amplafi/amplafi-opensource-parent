@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+Checkstyle-Configuration: Tapestry Html Checks
+Description:
+
+-->
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <property name="severity" value="warning"/>
+    <module name="TreeWalker">
+        <property name="tabWidth" value="4"/>
+        <module name="FileContentsHolder"/>
+        <module name="TabCharacter"/>
+        <module name="Regexp">
+            <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="use of Link Submit is discouraged because it breaks phone browsers"/>
+            <property name="severity" value="error"/>
+            <property name="format" value="$LinkSubmit^"/>
+            <property name="message" value="LinkSubmit breaks phone browsers."/>
+            <property name="illegalPattern" value="true"/>
+        </module>
+    </module>
+    <module name="SuppressionCommentFilter">
+        <metadata name="com.atlassw.tools.eclipse.checkstyle.comment" value="Enables ignoring checkstyle errors in sepecific blocks"/>
+    </module>
+</module>
