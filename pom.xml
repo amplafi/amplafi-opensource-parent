@@ -109,9 +109,9 @@
         <commons-logging-build>1.1</commons-logging-build>
         <log4j-build>1.2.14</log4j-build>
         <acegi-security-build>1.0.5</acegi-security-build>
-        <hibernate-build>3.4.0-amplafi-SNAPSHOT</hibernate-build>
+        <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
         <freemarker-build>2.3.10</freemarker-build>
-        <slf4j-build>1.5.5</slf4j-build>
+        <slf4j-build>1.5.6</slf4j-build>
         <spring-build>2.0.5</spring-build>
         <selenium-server-build>1.0-beta-1</selenium-server-build>
         <selenium-java-client-driver-build>1.0-beta-1</selenium-java-client-driver-build>
