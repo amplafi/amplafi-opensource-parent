@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.amplafi</groupId>
     <artifactId>amplafi-opensource-parent</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9.1-SNAPSHOT</version>
     <name>Amplafi Parent</name>
     <description>Amplafi parent module</description>
     <inceptionYear>2006</inceptionYear>
@@ -107,10 +107,8 @@
         <tacos-build>4.1.2-SNAPSHOT</tacos-build>
         <hivemind-build>1.1.1</hivemind-build>
         <commons-logging-build>1.1</commons-logging-build>
-        <log4j-build>1.2.14</log4j-build>
+        <log4j-build>1.2.15</log4j-build>
         <acegi-security-build>1.0.5</acegi-security-build>
-        <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
-        <freemarker-build>2.3.10</freemarker-build>
         <slf4j-build>1.5.6</slf4j-build>
         <spring-build>2.0.5</spring-build>
         <selenium-server-build>1.0-beta-1</selenium-server-build>
@@ -128,7 +126,6 @@
         <maven-compiler-plugin-build>2.0.2</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.0</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.0</maven-dependency-plugin-build>
-        <hiveutils-build>0.7.1</hiveutils-build>
         <maven-deploy-plugin-build>2.4</maven-deploy-plugin-build>
         <maven-eclipse-plugin-build>2.5.1</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
@@ -152,12 +149,6 @@
         <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
-        <james-mailet-build>3.0</james-mailet-build>
-        <apache-httpcomponents-build>4.0</apache-httpcomponents-build>
-        <apache-httpcomponents-client-build>4.0-beta2</apache-httpcomponents-client-build>
-        <google-gdata-build>1.0</google-gdata-build>
-        <liquibase-plugin-build>1.9.1.0</liquibase-plugin-build>
-        <liquibase-build>1.9.1</liquibase-build>
         <ognl-build>2.7.3</ognl-build>
         <ehcache-build>1.6.0-beta3</ehcache-build>
         <jericho-htmlparser-build>2.6.1</jericho-htmlparser-build>
@@ -331,51 +322,15 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-email</artifactId>
-                <version>1.1</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>dumbster</groupId>
-                        <artifactId>dumbster</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
                 <version>3.1</version>
             </dependency>
             <!-- javax* -->
             <dependency>
-                <groupId>javax.mail</groupId>
-                <artifactId>mail</artifactId>
-                <version>1.4</version>
-            </dependency>
-            <dependency>
                 <groupId>javax.activation</groupId>
                 <artifactId>activation</artifactId>
                 <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>james</groupId>
-                <artifactId>mailet-api</artifactId>
-                <version>${james-mailet-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.james</groupId>
-                <artifactId>apache-mime4j</artifactId>
-                <version>0.5</version>
-            </dependency>
-            <dependency>
-                <groupId>james</groupId>
-                <artifactId>mailet</artifactId>
-                <version>${james-mailet-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.freemarker</groupId>
-                <artifactId>freemarker</artifactId>
-                <version>${freemarker-build}</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -389,26 +344,6 @@
                 <artifactId>ehcache</artifactId>
                 <version>${ehcache-build}</version>
             </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
-                <version>${hibernate-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-c3p0</artifactId>
-                <version>${hibernate-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-ehcache</artifactId>
-                <version>${hibernate-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-jmx</artifactId>
-                <version>${hibernate-build}</version>
-            </dependency>
             <!-- slf4j used by hibernate -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -421,26 +356,6 @@
                 <version>${slf4j-build}</version>
             </dependency>
             <dependency>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-core</artifactId>
-                <version>${liquibase-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>net.oauth</groupId>
-                <artifactId>core</artifactId>
-                <version>20080621</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.xmlrpc</groupId>
-                <artifactId>xmlrpc-client</artifactId>
-                <version>3.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.xmlrpc</groupId>
-                <artifactId>xmlrpc-common</artifactId>
-                <version>3.1</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.ws.commons.util</groupId>
                 <artifactId>ws-commons-util</artifactId>
                 <version>1.0.2</version>
@@ -449,23 +364,6 @@
                 <groupId>dom4j</groupId>
                 <artifactId>dom4j</artifactId>
                 <version>1.6.1</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.transaction</groupId>
-                <artifactId>jta</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>c3p0</groupId>
-                <artifactId>c3p0</artifactId>
-                <version>0.9.1.2</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>5.0.5</version>
-                <scope>runtime</scope>
             </dependency>
             <!-- BEGIN Tapestry -->
             <dependency>
@@ -700,11 +598,6 @@
                 <scope>provided</scope>
             </dependency>
             <!-- END jmx -->
-            <dependency>
-                <groupId>rhino</groupId>
-                <artifactId>js</artifactId>
-                <version>1.6R5</version>
-            </dependency>
             <!-- BEGIN test insertion -->
             <!--  needed for building some hibernate ant tasks -->
             <dependency>
@@ -745,13 +638,7 @@
                 <artifactId>commons-codec</artifactId>
                 <version>1.3</version>
             </dependency>
-            <!--  END google gdata libraries -->
             <!-- test dependencies -->
-            <!--
-                <dependency> <groupId>htmlunit</groupId> <artifactId>htmlunit</artifactId> <version>1.9</version>
-                <scope>test</scope> </dependency> <dependency> <groupId>httpunit</groupId> <artifactId>httpunit</artifactId>
-                <version>[1.6.2,)</version> <scope>test</scope> </dependency>
-            -->
             <dependency>
                 <groupId>org.easymock</groupId>
                 <artifactId>easymock</artifactId>
@@ -801,13 +688,6 @@
                 <artifactId>bcprov-jdk15</artifactId>
                 <version>${bouncycastle-build}</version>
             </dependency>
-            <!-- used for email testing -->
-            <dependency>
-                <groupId>dumbster</groupId>
-                <artifactId>dumbster</artifactId>
-                <version>1.6</version>
-                <scope>test</scope>
-            </dependency>
             <dependency>
                 <groupId>xmlunit</groupId>
                 <artifactId>xmlunit</artifactId>
@@ -854,18 +734,6 @@
                 <groupId>org.codehaus.plexus</groupId> <artifactId>plexus-utils</artifactId> <version>1.4.1</version>
                 </dependency>
             -->
-            <dependency>
-                <groupId>org.amplafi</groupId>
-                <artifactId>amplafi-timeline</artifactId>
-                <version>0.0.2</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.amplafi</groupId>
-                <artifactId>amplafi-stacktraces</artifactId>
-                <version>0.0.1</version>
-                <scope>runtime</scope>
-            </dependency>
             <dependency>
                 <groupId>net.sourceforge.jexcelapi</groupId>
                 <artifactId>jxl</artifactId>
