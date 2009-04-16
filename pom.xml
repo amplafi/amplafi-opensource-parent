@@ -786,20 +786,6 @@
                 <checksumPolicy>warn</checksumPolicy>
             </snapshots>
         </repository>
-        <repository>
-            <id>tacos-snapshot</id>
-            <name>Tacos Snapshot Repo</name>
-            <url>http://tacos.sourceforge.net/nightly/</url>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <!-- every 2 days -->
-                <updatePolicy>interval:2880</updatePolicy>
-            </snapshots>
-        </repository>
     </repositories>
     <build>
         <defaultGoal>install</defaultGoal>
