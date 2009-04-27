@@ -101,16 +101,14 @@
     <properties>
         <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow</svn-base>
 
-        <tapestry-build>4.1.6</tapestry-build>
-        <tapestry-test-build>4.1.4</tapestry-test-build>
-        
-        <tacos-build>4.1.2-SNAPSHOT</tacos-build>
+        <tapestry4-build>4.1.6</tapestry4-build>
+        <tapestry4-test-build>4.1.4</tapestry4-test-build>
+        <tapestry5-build>5.0.18</tapestry5-build>
+        <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <hivemind-build>1.1.1</hivemind-build>
         <commons-logging-build>1.1</commons-logging-build>
         <log4j-build>1.2.14</log4j-build>
-        <acegi-security-build>1.0.5</acegi-security-build>
         <slf4j-build>1.5.6</slf4j-build>
-        <spring-build>2.0.5</spring-build>
         <json-lib-build>2.2.3</json-lib-build>
         <selenium-server-build>1.0-beta-1</selenium-server-build>
         <selenium-java-client-driver-build>1.0-beta-1</selenium-java-client-driver-build>
@@ -381,10 +379,11 @@
                 <artifactId>hivemind-lib</artifactId>
                 <version>${hivemind-build}</version>
             </dependency>
+	        <!-- needed by tapestry4 code -->
             <dependency>
                 <groupId>org.apache.tapestry</groupId>
                 <artifactId>tapestry-framework</artifactId>
-                <version>${tapestry-build}</version>
+                <version>${tapestry4-build}</version>
                 <exclusions>
                     <exclusion> <!-- using javassist:javassist -->
                         <groupId>jboss</groupId>
@@ -395,7 +394,7 @@
             <dependency>
                 <groupId>org.apache.tapestry</groupId>
                 <artifactId>tapestry-annotations</artifactId>
-                <version>${tapestry-build}</version>
+                <version>${tapestry4-build}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.apache.tapestry</groupId>
@@ -406,7 +405,7 @@
             <dependency>
                 <groupId>org.apache.tapestry</groupId>
                 <artifactId>tapestry-contrib</artifactId>
-                <version>${tapestry-build}</version>
+                <version>${tapestry4-build}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>jboss</groupId>
@@ -417,11 +416,6 @@
                         <artifactId>tapestry-framework</artifactId>
                     </exclusion>
                 </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>p6spy</groupId>
-                <artifactId>p6spy</artifactId>
-                <version>1.3</version>
             </dependency>
             <!-- needed by tapestry code -->
             <dependency>
@@ -429,138 +423,12 @@
                 <artifactId>backport-util-concurrent</artifactId>
                 <version>3.0</version>
             </dependency>
-
             <dependency>
                 <groupId>javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>3.8.0.GA</version>
             </dependency>
-            <dependency>
-                <groupId>net.sf.tacos</groupId>
-                <artifactId>beanform-core</artifactId>
-                <version>0.9</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sf.tacos</groupId>
-                <artifactId>tacos-core</artifactId>
-                <version>${tacos-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>jboss</groupId>
-                        <artifactId>j2ee</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.tapestry</groupId>
-                        <artifactId>tapestry-framework</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>ognl</groupId>
-                        <artifactId>ognl</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>xom</groupId>
-                        <artifactId>xom</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>net.sf.tacos</groupId>
-                <artifactId>tacos-annotations</artifactId>
-                <version>${tacos-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.apache.tapestry</groupId>
-                        <artifactId>tapestry-framework</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>ognl</groupId>
-                        <artifactId>ognl</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javassist</groupId>
-                        <artifactId>javassist</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <!-- END Tapestry -->
-            <!-- BEGIN Acegi security -->
-            <dependency>
-                <groupId>org.acegisecurity</groupId>
-                <artifactId>acegi-security-tiger</artifactId>
-                <version>${acegi-security-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-lang</groupId>
-                        <artifactId>commons-lang</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.acegisecurity</groupId>
-                <artifactId>acegi-security</artifactId>
-                <version>${acegi-security-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>avalon-framework</groupId>
-                        <artifactId>avalon-framework</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>log4j</groupId>
-                        <artifactId>log4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-remoting</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-dao</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-support</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-aop</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${spring-build}</version>
-            </dependency>
-            <!-- END Acegi Security -->
-            <!-- handles HTML parsing -->
-            <dependency>
-                <groupId>net.htmlparser.jericho</groupId>
-                <artifactId>jericho-html</artifactId>
-                <version>2.6-dev</version>
-            </dependency>
             <dependency>
                 <groupId>commons-digester</groupId>
                 <artifactId>commons-digester</artifactId>
@@ -1043,6 +911,7 @@
         <module>../amplafi-flow-core</module>
         <module>../amplafi-tapestry4-test</module>
         <module>../amplafi-flow-tapestry4</module>
+        <module>../amplafi-flow-tapestry5</module>
     </modules>
     <pluginRepositories>
         <pluginRepository>
