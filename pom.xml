@@ -119,33 +119,30 @@
         <testng-build>5.5</testng-build>
         <commons-lang-build>2.4</commons-lang-build>
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
-        <maven-assembly-plugin-build>2.2-beta-3</maven-assembly-plugin-build>
+        <maven-assembly-plugin-build>2.2-beta-4</maven-assembly-plugin-build>
         <maven-checkstyle-plugin-build>2.2</maven-checkstyle-plugin-build>
         <maven-clean-plugin-build>2.3</maven-clean-plugin-build>
         <maven-compiler-plugin-build>2.0.2</maven-compiler-plugin-build>
-        <cobertura-maven-plugin-build>2.0</cobertura-maven-plugin-build>
-        <maven-dependency-plugin-build>2.0</maven-dependency-plugin-build>
+        <cobertura-maven-plugin-build>2.2</cobertura-maven-plugin-build>
+        <maven-dependency-plugin-build>2.1</maven-dependency-plugin-build>
         <maven-deploy-plugin-build>2.4</maven-deploy-plugin-build>
         <maven-eclipse-plugin-build>2.5.1</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
+        <maven-install-plugin-build>2.3</maven-install-plugin-build>
         <maven-jar-plugin-build>2.2</maven-jar-plugin-build>
-        <maven-jetty-plugin-build>6.1.15</maven-jetty-plugin-build>
+        <maven-jetty-plugin-build>6.1.16</maven-jetty-plugin-build>
         <!-- jetty-build>6.1.4</jetty-build -->
         <!-- 17 jul 2007 selenium requires this version -->
         <jetty-build>5.1.10</jetty-build>
         <buildnumber-maven-plugin-build>1.0-beta-1</buildnumber-maven-plugin-build>
-        <maven-project-info-reports-plugin-build>2.1</maven-project-info-reports-plugin-build>
-        <maven-release-plugin-build>2.0-beta-8</maven-release-plugin-build>
+        <maven-project-info-reports-plugin-build>2.1.1</maven-project-info-reports-plugin-build>
+        <maven-release-plugin-build>2.0-beta-9</maven-release-plugin-build>
         <maven-repository-plugin-build>2.1</maven-repository-plugin-build>
         <maven-resources-plugin-build>2.3</maven-resources-plugin-build>
-        <maven-source-plugin-build>2.0.4</maven-source-plugin-build>
-        <maven-site-plugin-build>2.0-beta-7</maven-site-plugin-build>
-        <!--
-            We need http://jira.codehaus.org/browse/SUREFIRE-446 and http://jira.codehaus.org/browse/SUREFIRE-463 to move to more
-            recent versions (>2.4.2)
-        -->
-        <!-- maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build-->
-        <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
+        <maven-source-plugin-build>2.1</maven-source-plugin-build>
+        <maven-site-plugin-build>2.0</maven-site-plugin-build>
+        <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
+        <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
@@ -676,10 +673,15 @@
         </plugins>
         <pluginManagement>
             <plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>${maven-install-plugin-build}</version>
+				</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-idea-plugin</artifactId>
-                    <version>2.0</version>
+                    <version>2.2</version>
                     <configuration>
                         <downloadSources>true</downloadSources>
                         <downloadJavadocs>true</downloadJavadocs>
@@ -728,11 +730,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
+					<version>${maven-source-plugin-build}</version>
                     <inherited>true</inherited>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
-                            <phase>install</phase>
+                            <phase>verify</phase>
                             <goals>
                                 <goal>jar</goal>
                                 <goal>test-jar</goal>
@@ -982,6 +985,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
+				<version>${maven-surefire-report-plugin-build}</version>
                 <inherited>true</inherited>
                 <configuration>
                     <executions>
@@ -1017,8 +1021,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <!-- version 2.1 seems to have some issue with -->
-                <!-- creating/reading its .ser file... need more investigation  -->
                 <version>${cobertura-maven-plugin-build}</version>
                 <configuration>
                     <executions>
