@@ -146,8 +146,6 @@
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
-        <ehcache-build>1.6.0-beta3</ehcache-build>
-        <jericho-htmlparser-build>2.6.1</jericho-htmlparser-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <pmd-build>4.2.5</pmd-build>
     </properties>
@@ -339,11 +337,6 @@
                 <scope>provided</scope>
             </dependency>
             <!-- persistence -->
-            <dependency>
-                <groupId>net.sf.ehcache</groupId>
-                <artifactId>ehcache</artifactId>
-                <version>${ehcache-build}</version>
-            </dependency>
             <!-- slf4j used by hibernate -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -418,7 +411,7 @@
             <dependency>
                 <groupId>backport-util-concurrent</groupId>
                 <artifactId>backport-util-concurrent</artifactId>
-                <version>3.0</version>
+                <version>3.1</version>
             </dependency>
             <dependency>
                 <groupId>javassist</groupId>
