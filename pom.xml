@@ -144,7 +144,7 @@
         <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
-        <wagon-build>1.0-beta-2</wagon-build>
+        <wagon-build>1.0-beta-6</wagon-build>
         <ognl-build>2.7.3</ognl-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <pmd-build>4.2.5</pmd-build>
