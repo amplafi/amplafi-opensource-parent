@@ -141,8 +141,24 @@
         <maven-resources-plugin-build>2.3</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
         <maven-site-plugin-build>2.0</maven-site-plugin-build>
+                <!--
+            We need http://jira.codehaus.org/browse/SUREFIRE-446 and http://jira.codehaus.org/browse/SUREFIRE-463 to move to more
+            recent versions (>2.4.2)
+        -->
+        <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
+        <maven-surefire-report-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-report-plugin-build>
+        <!-- 
+        2.4.3 is broken -- it is not reporting the test being run.
+        Couldn't find resource on the class path: testng.css
+        Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec
+        Running TestSuite
+        [Parser] Running:
+        Command line suite
+
+        
         <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
+         -->
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
