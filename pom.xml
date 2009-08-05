@@ -103,7 +103,7 @@
 
         <tapestry4-build>4.1.6</tapestry4-build>
         <tapestry4-test-build>4.1.4</tapestry4-test-build>
-        <tapestry5-build>5.0.18</tapestry5-build>
+        <tapestry5-build>5.1.0.5</tapestry5-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <hivemind-build>1.1.1</hivemind-build>
         <commons-logging-build>1.1</commons-logging-build>
