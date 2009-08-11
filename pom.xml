@@ -106,8 +106,9 @@
         <tapestry5-build>5.1.0.5</tapestry5-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <hivemind-build>1.1.1</hivemind-build>
+        <!-- 1.1.1 was released november 2007 with fixes.. but not on repository? -->
         <commons-logging-build>1.1</commons-logging-build>
-        <log4j-build>1.2.14</log4j-build>
+        <log4j-build>1.2.15</log4j-build>
         <slf4j-build>1.5.6</slf4j-build>
         <json-lib-build>2.2.3</json-lib-build>
         <selenium-server-build>1.0-beta-1</selenium-server-build>
@@ -141,13 +142,13 @@
         <maven-resources-plugin-build>2.3</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
         <maven-site-plugin-build>2.0</maven-site-plugin-build>
-                <!--
+        <!--
             We need http://jira.codehaus.org/browse/SUREFIRE-446 and http://jira.codehaus.org/browse/SUREFIRE-463 to move to more
             recent versions (>2.4.2)
         -->
         <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-report-plugin-build>
-        <!-- 
+        <!--
         2.4.3 is broken - it is not reporting the test being run.
         Couldn't find resource on the class path: testng.css
         Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec
@@ -157,8 +158,8 @@
 
         
         <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
-        <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
-         -->
+            <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
+        -->
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
@@ -285,6 +286,26 @@
                 </exclusions>
             </dependency>
             <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging-api</artifactId>
+                <version>${commons-logging-build}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-build}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.jmx</groupId>
+                        <artifactId>jmxri</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.sun.jdmk</groupId>
+                        <artifactId>jmxtools</artifactId>
+                    </exclusion>                    
+                </exclusions>
+            </dependency>
+            <dependency>
                 <groupId>commons-proxy</groupId>
                 <artifactId>commons-proxy</artifactId>
                 <version>1.0</version>
@@ -298,42 +319,6 @@
                 <groupId>oro</groupId>
                 <artifactId>oro</artifactId>
                 <version>2.0.8</version>
-            </dependency>
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${log4j-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-chain</groupId>
-                <artifactId>commons-chain</artifactId>
-                <version>1.1</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.servlet</groupId>
-                        <artifactId>servlet-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>myfaces</groupId>
-                        <artifactId>myfaces-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>javax.portlet</groupId>
-                        <artifactId>portlet-api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-collections</groupId>
-                        <artifactId>commons-collections</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>junit</groupId>
-                        <artifactId>junit</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>commons-httpclient</groupId>
@@ -385,7 +370,7 @@
                 <artifactId>hivemind-lib</artifactId>
                 <version>${hivemind-build}</version>
             </dependency>
-	        <!-- needed by tapestry4 code -->
+            <!-- needed by tapestry4 code -->
             <dependency>
                 <groupId>org.apache.tapestry</groupId>
                 <artifactId>tapestry-framework</artifactId>
@@ -622,7 +607,7 @@
                 <groupId>pmd</groupId>
                 <artifactId>pmd-jdk14</artifactId>
                 <version>${pmd-build}</version>
-            </dependency> 
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <repositories>
@@ -682,11 +667,11 @@
         </plugins>
         <pluginManagement>
             <plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-install-plugin</artifactId>
-					<version>${maven-install-plugin-build}</version>
-				</plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven-install-plugin-build}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-idea-plugin</artifactId>
@@ -729,17 +714,17 @@
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>${maven-eclipse-plugin-build}</version>
                     <configuration>
-                      <!-- 
+                        <!-- 
                       <workspaceCodeStylesURL></workspaceCodeStylesURL>
                        -->
                         <buildOutputDirectory>bin</buildOutputDirectory>
-                       
+
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-					<version>${maven-source-plugin-build}</version>
+                    <version>${maven-source-plugin-build}</version>
                     <inherited>true</inherited>
                     <executions>
                         <execution>
@@ -766,7 +751,7 @@
                     <version>${maven-resources-plugin-build}</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
-                    </configuration>                     
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -876,7 +861,7 @@
                     <artifactId>maven-site-plugin</artifactId>
                     <version>${maven-site-plugin-build}</version>
                     <executions>
-                       <execution>
+                        <execution>
                             <phase>package</phase>
                             <goals>
                                 <goal>jar</goal>
@@ -895,9 +880,9 @@
                             <configuration>
                                 <attach>true</attach>
                             </configuration>
-                        </execution>    
--->
-                    </executions>      
+                            </execution>
+                        -->
+                    </executions>
                 </plugin>
 
             </plugins>
@@ -991,7 +976,7 @@
     </pluginRepositories>
     <reporting>
         <plugins>
-        <!-- 
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
@@ -1015,7 +1000,7 @@
                     <parallel>false</parallel>
                 </configuration>
             </plugin>
-         -->
+            -->
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin-build}</version>
@@ -1164,7 +1149,7 @@
             <id>public-deploy</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
-             </activation>
+            </activation>
             <build>
                 <defaultGoal>deploy</defaultGoal>
             </build>
