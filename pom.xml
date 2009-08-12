@@ -413,6 +413,7 @@
                 <groupId>backport-util-concurrent</groupId>
                 <artifactId>backport-util-concurrent</artifactId>
                 <version>3.1</version>
+                <scope>runtime</scope>
             </dependency>
             <dependency>
                 <groupId>javassist</groupId>
@@ -611,18 +612,9 @@
         </dependencies>
     </dependencyManagement>
     <repositories>
-        <repository>
-            <id>apache.releases</id>
-            <url>http://repo1.maven.org/maven2/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>interval:1440</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
+    <!-- TODO: seems like we are not going to mvnrepository.com ( or where ever the default master repo is to be ) 
+    http://www.mvnrepository.com/artifact/com.sun.jdmk/jmxtools for example exists on mvnrepository.com
+     -->
         <repository>
             <id>apache.snapshots</id>
             <url>http://people.apache.org/repo/m2-snapshot-repository/</url>
