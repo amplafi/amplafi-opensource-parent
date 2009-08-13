@@ -106,8 +106,7 @@
         <tapestry5-build>5.1.0.5</tapestry5-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <hivemind-build>1.1.1</hivemind-build>
-        <!-- 1.1.1 was released november 2007 with fixes.. but not on repository? -->
-        <commons-logging-build>1.1</commons-logging-build>
+        <commons-logging-build>1.1.1</commons-logging-build>
         <log4j-build>1.2.15</log4j-build>
         <slf4j-build>1.5.6</slf4j-build>
         <json-lib-build>2.2.3</json-lib-build>
@@ -736,6 +735,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${maven-deploy-plugin-build}</version>
+                    <configuration>
+                        <uniqueVersion>false</uniqueVersion>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
