@@ -302,6 +302,10 @@
                         <groupId>com.sun.jdmk</groupId>
                         <artifactId>jmxtools</artifactId>
                     </exclusion>                    
+                    <exclusion>
+                        <groupId>javax.jms</groupId>
+                        <artifactId>jms</artifactId>
+                    </exclusion>                       
                 </exclusions>
             </dependency>
             <dependency>
@@ -420,16 +424,6 @@
                 <version>3.8.0.GA</version>
             </dependency>
             <!-- END Tapestry -->
-            <dependency>
-                <groupId>commons-digester</groupId>
-                <artifactId>commons-digester</artifactId>
-                <version>1.8</version>
-            </dependency>
-            <dependency>
-                <groupId>org.htmlcleaner</groupId>
-                <artifactId>htmlcleaner</artifactId>
-                <version>1.4</version>
-            </dependency>
             <!-- handles RSS parsing -->
             <dependency>
                 <groupId>jdom</groupId>
