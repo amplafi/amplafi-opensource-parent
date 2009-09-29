@@ -887,7 +887,6 @@
         </extensions>
     </build>
     <modules>
-        <module>../amplafi-hivemind</module>
         <module>../amplafi-sworddance</module>
         <module>../amplafi-json</module>
         <module>../amplafi-flow-core</module>
@@ -1131,6 +1130,7 @@
                 </plugins>
             </build>
         </profile>
+        <!-- full deploy of everything -->
         <profile>
             <id>public-deploy</id>
             <activation>
@@ -1139,6 +1139,16 @@
             <build>
                 <defaultGoal>deploy</defaultGoal>
             </build>
+            <modules>
+                <module>../amplafi-tapestry-javaforge</module>
+                <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-hivemind</module>
+                <module>../amplafi-sworddance</module>
+                <module>../amplafi-json</module>
+                <module>../amplafi-flow-core</module>
+                <module>../amplafi-flow-tapestry4</module>
+                <module>../amplafi-flow-tapestry5</module>
+            </modules>
         </profile>
     </profiles>
 </project>
