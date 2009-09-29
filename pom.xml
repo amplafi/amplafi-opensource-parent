@@ -679,7 +679,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>${maven-dependency-plugin-build}</version>
-                    <inherited>true</inherited>
                     <executions>
                         <execution>
                             <id>sources</id>
@@ -710,7 +709,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
                     <version>${maven-source-plugin-build}</version>
-                    <inherited>true</inherited>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -894,7 +892,7 @@
         <module>../amplafi-json</module>
         <module>../amplafi-flow-core</module>
         <module>../amplafi-flow-tapestry4</module>
-        <module>../amplafi-flow-tapestry5</module>
+        <!-- module>../amplafi-flow-tapestry5</module-->
     </modules>
     <pluginRepositories>
         <pluginRepository>
