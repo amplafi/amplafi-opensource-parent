@@ -1133,9 +1133,6 @@
         <!-- full deploy of everything -->
         <profile>
             <id>public-deploy</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <defaultGoal>deploy</defaultGoal>
             </build>
