@@ -120,45 +120,25 @@
         <commons-lang-build>2.4</commons-lang-build>
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
         <maven-assembly-plugin-build>2.2-beta-4</maven-assembly-plugin-build>
-        <maven-checkstyle-plugin-build>2.2</maven-checkstyle-plugin-build>
+        <maven-checkstyle-plugin-build>2.3</maven-checkstyle-plugin-build>
         <maven-clean-plugin-build>2.3</maven-clean-plugin-build>
         <maven-compiler-plugin-build>2.0.2</maven-compiler-plugin-build>
-        <cobertura-maven-plugin-build>2.2</cobertura-maven-plugin-build>
+        <cobertura-maven-plugin-build>2.3</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.1</maven-dependency-plugin-build>
         <maven-deploy-plugin-build>2.4</maven-deploy-plugin-build>
-        <maven-eclipse-plugin-build>2.5.1</maven-eclipse-plugin-build>
+        <maven-eclipse-plugin-build>2.7</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
         <maven-install-plugin-build>2.3</maven-install-plugin-build>
         <maven-jar-plugin-build>2.2</maven-jar-plugin-build>
-        <maven-jetty-plugin-build>6.1.16</maven-jetty-plugin-build>
-        <!-- jetty-build>6.1.4</jetty-build -->
-        <!-- 17 jul 2007 selenium requires this version -->
-        <jetty-build>5.1.10</jetty-build>
         <buildnumber-maven-plugin-build>1.0-beta-1</buildnumber-maven-plugin-build>
-        <maven-project-info-reports-plugin-build>2.1.1</maven-project-info-reports-plugin-build>
+        <maven-project-info-reports-plugin-build>2.1.2</maven-project-info-reports-plugin-build>
         <maven-release-plugin-build>2.0-beta-9</maven-release-plugin-build>
-        <maven-repository-plugin-build>2.1</maven-repository-plugin-build>
-        <maven-resources-plugin-build>2.3</maven-resources-plugin-build>
+        <maven-repository-plugin-build>2.2</maven-repository-plugin-build>
+        <maven-resources-plugin-build>2.4</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
-        <maven-site-plugin-build>2.0</maven-site-plugin-build>
-        <!--
-            We need http://jira.codehaus.org/browse/SUREFIRE-446 and http://jira.codehaus.org/browse/SUREFIRE-463 to move to more
-            recent versions (>2.4.2)
-        -->
-        <maven-surefire-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-plugin-build>
-        <maven-surefire-report-plugin-build>2.4-collab-amplafi-20070602</maven-surefire-report-plugin-build>
-        <!--
-        2.4.3 is broken - it is not reporting the test being run.
-        Couldn't find resource on the class path: testng.css
-        Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec
-        Running TestSuite
-        [Parser] Running:
-        Command line suite
-
-        
+        <maven-site-plugin-build>2.0.1</maven-site-plugin-build>
         <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
-            <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
-        -->
+        <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
         <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
@@ -574,16 +554,6 @@
                 </exclusions>
             </dependency>
             <!--
-                for when we move to jetty 6+ <dependency> <groupId>org.mortbay.jetty</groupId> <artifactId>jetty</artifactId>
-                <version>${jetty-build}</version> <scope>test</scope> </dependency>
-            -->
-            <dependency>
-                <groupId>jetty</groupId>
-                <artifactId>org.mortbay.jetty</artifactId>
-                <version>${jetty-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <!--
                 <dependency> <groupId>net.sourceforge.jwebunit</groupId> <artifactId>jwebunit-core</artifactId>
                 <version>1.4.1</version> <scope>runtime</scope> </dependency>
             -->
@@ -767,27 +737,6 @@
                     -->
                 </plugin>
                 <plugin>
-                    <groupId>org.mortbay.jetty</groupId>
-                    <artifactId>maven-jetty-plugin</artifactId>
-                    <version>${maven-jetty-plugin-build}</version>
-                    <configuration>
-                        <webAppSourceDirectory>src/main/webapp</webAppSourceDirectory>
-                        <contextPath>/</contextPath>
-                        <!--scanIntervalSeconds>10</scanIntervalSeconds-->
-                        <systemProperties>
-                            <systemProperty>
-                                <name>org.apache.tapestry.enable-reset-service</name>
-                                <value>true</value>
-                            </systemProperty>
-                        </systemProperties>
-                    </configuration>
-                    <!--
-                        selenium is causing problems! it uses old version of jetty 5.1.10 <dependencies> <dependency>
-                        <groupId>org.mortbay.jetty</groupId> <artifactId>jetty</artifactId> <version>${jetty-build}</version>
-                        <scope>runtime</scope> </dependency> </dependencies>
-                    -->
-                </plugin>
-                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin-build}</version>
@@ -910,7 +859,7 @@
         </pluginRepository>
         <pluginRepository>
             <id>apache.snapshots</id>
-            <url>http://people.apache.org/repo/m2-snapshot-repository</url>
+	    <url>http://repository.apache.org/snapshots</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -931,19 +880,6 @@
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>interval:1440</updatePolicy>
-            </snapshots>
-        </pluginRepository>
-        <!-- remove when tapdoc hits central -->
-        <pluginRepository>
-            <id>tacos-plugin-snapshot</id>
-            <url>http://tacos.sourceforge.net/nightly</url>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>interval:2880</updatePolicy>
             </snapshots>
         </pluginRepository>
         <pluginRepository>
