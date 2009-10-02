@@ -833,12 +833,13 @@
                 <artifactId>wagon-ftp</artifactId>
                 <version>${wagon-build}</version>
             </extension>
-            <!-- sftp patmoore,amplafi-flow@web.sourceforge.net -->
+            <!-- sftp patmoore,amplafi-flow@web.sourceforge.net
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-sftp</artifactId>
                 <version>${wagon-build}</version>
             </extension>
+             -->
         </extensions>
     </build>
     <modules>
