@@ -837,7 +837,6 @@
     </build>
     <modules>
         <module>../amplafi-sworddance</module>
-        <module>../amplafi-json</module>
         <module>../amplafi-flow-core</module>
         <module>../amplafi-flow-tapestry4</module>
         <!-- module>../amplafi-flow-tapestry5</module-->
