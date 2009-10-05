@@ -580,7 +580,7 @@
      -->
         <repository>
             <id>apache.snapshots</id>
-            <url>http://people.apache.org/repo/m2-snapshot-repository/</url>
+	    <url>http://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -741,13 +741,6 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin-build}</version>
                     <configuration>
-                        <forkMode>pertest</forkMode>
-                        <argLine>-XX:+HeapDumpOnOutOfMemoryError -enableassertions -Xmx256m -XX:MaxPermSize=256m
-                        </argLine>
-                        <!--
-                            child first class loading like web apps do, seems like a good idea since this is a web app!
-                        -->
-                        <childDelegation>true</childDelegation>
                         <systemProperties>
                             <property>
                                 <name>user.language</name>
@@ -757,7 +750,6 @@
                         <!--
                             <parallel>false</parallel> <threadCount>4</threadCount>
                         -->
-                        <excludedGroups>browser</excludedGroups>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -865,7 +857,7 @@
         </pluginRepository>
         <pluginRepository>
             <id>apache.snapshots</id>
-	    <url>http://repository.apache.org/snapshots</url>
+	    <url>http://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
