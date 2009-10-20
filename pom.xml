@@ -101,17 +101,17 @@
     <properties>
         <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow</svn-base>
 
-        <tapestry4-build>4.1.6</tapestry4-build>
+        <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
         <tapestry4-test-build>4.1.4</tapestry4-test-build>
         <tapestry5-build>5.1.0.5</tapestry5-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <hivemind-build>1.1.1</hivemind-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <log4j-build>1.2.15</log4j-build>
-        <slf4j-build>1.5.6</slf4j-build>
+        <slf4j-build>1.5.8</slf4j-build>
         <json-lib-build>2.2.3</json-lib-build>
-        <selenium-server-build>1.0-beta-1</selenium-server-build>
-        <selenium-java-client-driver-build>1.0-beta-1</selenium-java-client-driver-build>
+        <selenium-server-build>1.0.1</selenium-server-build>
+        <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
         <!-- needed because 135 disappeared! used by selenium -->
         <bouncycastle-build>136</bouncycastle-build>
         <easymock-class-build>2.3</easymock-class-build>
