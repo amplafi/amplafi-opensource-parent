@@ -773,7 +773,6 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <inherited>true</inherited>
                     <executions>
                         <execution>
                             <id>attach-javadocs</id>
@@ -835,6 +834,8 @@
         </extensions>
     </build>
     <modules>
+        <module>../htmlcleaner</module>
+        <module>../jericho-html</module>
         <module>../amplafi-sworddance</module>
         <module>../amplafi-flow-core</module>
         <module>../amplafi-flow-tapestry4</module>
@@ -900,7 +901,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
 				<version>${maven-surefire-report-plugin-build}</version>
-                <inherited>true</inherited>
                 <configuration>
                     <executions>
                         <execution>
@@ -989,7 +989,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${maven-checkstyle-plugin-build}</version>
-                <inherited>true</inherited>
                 <configuration>
                     <configLocation>
                         ${project.parent.basedir}/src/main/resources/checkstyle/amplafi-checkstyle.xml
@@ -1066,11 +1065,13 @@
         </profile>
         <!-- full deploy of everything -->
         <profile>
-            <id>public-deploy</id>
+            <id>All</id>
             <build>
-                <defaultGoal>deploy</defaultGoal>
+                <defaultGoal>install</defaultGoal>
             </build>
             <modules>
+                <module>../htmlcleaner</module>
+                <module>../jericho-html</module>
                 <module>../amplafi-tapestry-javaforge</module>
                 <module>../amplafi-tapestry4-test</module>
                 <module>../amplafi-hivemind</module>
@@ -1081,5 +1082,28 @@
                 <module>../amplafi-flow-tapestry5</module>
             </modules>
         </profile>
+        <profile>
+            <id>Flow</id>
+            <build>
+                <defaultGoal>install</defaultGoal>
+            </build>
+            <modules>
+                <module>../amplafi-sworddance</module>
+                <module>../amplafi-json</module>
+                <module>../amplafi-flow-core</module>
+                <module>../amplafi-flow-tapestry4</module>
+                <module>../amplafi-flow-tapestry5</module>
+            </modules>
+        </profile>        
+        <profile>
+            <id>Html</id>
+            <build>
+                <defaultGoal>install</defaultGoal>
+            </build>
+            <modules>
+                <module>../htmlcleaner</module>
+                <module>../jericho-html</module>
+            </modules>
+        </profile>        
     </profiles>
 </project>
