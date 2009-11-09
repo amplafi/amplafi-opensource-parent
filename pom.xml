@@ -22,7 +22,7 @@
     </organization>
     <packaging>pom</packaging>
     <scm>
-        <developerConnection>scm:svn:${svn-base}/${artifactId}/trunk</developerConnection>
+        <developerConnection>scm:svn:${svn-base}/${project.artifactId}/trunk</developerConnection>
     </scm>
     <developers>
         <developer>
@@ -133,7 +133,7 @@
         <buildnumber-maven-plugin-build>1.0-beta-1</buildnumber-maven-plugin-build>
         <maven-project-info-reports-plugin-build>2.1.2</maven-project-info-reports-plugin-build>
         <maven-release-plugin-build>2.0-beta-9</maven-release-plugin-build>
-        <maven-repository-plugin-build>2.2</maven-repository-plugin-build>
+        <maven-repository-plugin-build>2.3</maven-repository-plugin-build>
         <maven-resources-plugin-build>2.4</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
         <maven-site-plugin-build>2.0.1</maven-site-plugin-build>
@@ -144,6 +144,7 @@
         <ognl-build>2.7.3</ognl-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <pmd-build>4.2.5</pmd-build>
+        <jxr-build>2.1</jxr-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -719,7 +720,7 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${maven-release-plugin-build}</version>
                     <configuration>
-                        <tagBase>${svn-base}/${artifactId}/tags/</tagBase>
+                        <tagBase>${svn-base}/${project.artifactId}/tags/</tagBase>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -793,7 +794,7 @@
                                 <goal>jar</goal>
                             </goals>
                             <configuration>
-                                <siteDirectory>${pom.artifactId}/src/site</siteDirectory>
+                                <siteDirectory>${project.artifactId}/src/site</siteDirectory>
                                 <attach>true</attach>
                             </configuration>
                         </execution>
@@ -932,6 +933,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
+                <version>${jxr-build}</version>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -978,6 +980,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
+                <version>${pmd-build}</version>
                 <configuration>
                     <linkXRef>true</linkXRef>
                     <sourceEncoding>utf-8</sourceEncoding>
