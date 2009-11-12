@@ -836,7 +836,6 @@
     </build>
     <modules>
         <module>../htmlcleaner</module>
-        <module>../jericho-html</module>
         <module>../amplafi-sworddance</module>
         <module>../amplafi-flow-core</module>
         <module>../amplafi-flow-tapestry4</module>
