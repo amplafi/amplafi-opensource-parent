@@ -144,6 +144,7 @@
         <ognl-build>2.7.3</ognl-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <pmd-build>4.2.5</pmd-build>
+        <pmd-plugin-build>2.4</pmd-plugin-build>        
         <jxr-build>2.1</jxr-build>
     </properties>
     <dependencyManagement>
@@ -593,7 +594,7 @@
         </repository>
         <repository>
             <id>amplafi.public</id>
-            <url>http://www.amplafi.com/repository/</url>
+            <url>http://amplafi.com/repository/</url>
             <releases>
                 <checksumPolicy>warn</checksumPolicy>
             </releases>
@@ -881,6 +882,7 @@
                 <updatePolicy>interval:1440</updatePolicy>
             </snapshots>
         </pluginRepository>
+        <!-- 
         <pluginRepository>
             <id>amplafi-public-plugins</id>
             <url>http://amplafi.com/repository</url>
@@ -893,6 +895,7 @@
                 <updatePolicy>interval:2880</updatePolicy>
             </snapshots>
         </pluginRepository>
+         -->
     </pluginRepositories>
     <reporting>
         <plugins>
@@ -979,7 +982,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>${pmd-build}</version>
+                <version>${pmd-plugin-build}</version>
                 <configuration>
                     <linkXRef>true</linkXRef>
                     <sourceEncoding>utf-8</sourceEncoding>
