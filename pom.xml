@@ -755,6 +755,9 @@
                             <goals>
                                 <goal>jar</goal>
                             </goals>
+                            <configuration>
+                                <encoding>UTF-8</encoding>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
