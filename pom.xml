@@ -116,7 +116,7 @@
         <bouncycastle-build>136</bouncycastle-build>
         <easymock-class-build>2.3</easymock-class-build>
         <easymock-build>2.3</easymock-build>
-        <testng-build>5.5</testng-build>
+        <testng-build>5.11</testng-build>
         <commons-lang-build>2.4</commons-lang-build>
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
         <maven-assembly-plugin-build>2.2-beta-4</maven-assembly-plugin-build>
@@ -137,9 +137,8 @@
         <maven-resources-plugin-build>2.4</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
         <maven-site-plugin-build>2.0.1</maven-site-plugin-build>
-        <maven-surefire-plugin-build>2.4.3</maven-surefire-plugin-build>
-        <maven-surefire-report-plugin-build>2.4.3</maven-surefire-report-plugin-build>
-        <maven-war-plugin-build>2.1-alpha-2</maven-war-plugin-build>
+        <maven-surefire-plugin-build>2.5</maven-surefire-plugin-build>
+        <maven-surefire-report-plugin-build>2.5</maven-surefire-report-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <ognl-build>2.7.3</ognl-build>
         <commons-digester-build>1.8.1</commons-digester-build>
