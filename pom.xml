@@ -353,6 +353,10 @@
                         <groupId>jboss</groupId>
                         <artifactId>javassist</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>backport-util-concurrent</groupId>
+                        <artifactId>backport-util-concurrent</artifactId>
+                    </exclusion>                    
                 </exclusions>
             </dependency>
             <dependency>
@@ -364,6 +368,10 @@
                         <groupId>org.apache.tapestry</groupId>
                         <artifactId>tapestry-framework</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>backport-util-concurrent</groupId>
+                        <artifactId>backport-util-concurrent</artifactId>
+                    </exclusion>                               
                 </exclusions>
             </dependency>
             <dependency>
@@ -379,6 +387,10 @@
                         <groupId>org.apache.tapestry</groupId>
                         <artifactId>tapestry-framework</artifactId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>backport-util-concurrent</groupId>
+                        <artifactId>backport-util-concurrent</artifactId>
+                    </exclusion>                    
                 </exclusions>
             </dependency>
             <!-- needed by tapestry code -->
@@ -541,7 +553,18 @@
                 <groupId>pmd</groupId>
                 <artifactId>pmd-jdk14</artifactId>
                 <version>${pmd-build}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>backport-util-concurrent</groupId>
+                        <artifactId>backport-util-concurrent</artifactId>
+                    </exclusion>           
+                </exclusions>
             </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.7</version>
+            </dependency>            
         </dependencies>
     </dependencyManagement>
     <repositories>
