@@ -1089,13 +1089,21 @@
             </modules>
         </profile>        
         <profile>
-            <id>Flow</id>
+            <id>Support</id>
             <build>
                 <defaultGoal>deploy</defaultGoal>
             </build>
             <modules>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
+            </modules>
+        </profile>        
+        <profile>
+            <id>Flow</id>
+            <build>
+                <defaultGoal>deploy</defaultGoal>
+            </build>
+            <modules>
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-flow-tapestry4</module>
                 <module>../amplafi-flow-tapestry5</module>
