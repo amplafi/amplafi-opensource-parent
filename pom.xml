@@ -403,7 +403,7 @@
             <dependency>
                 <groupId>javassist</groupId>
                 <artifactId>javassist</artifactId>
-                <version>3.8.0.GA</version>
+                <version>3.9.0.GA</version>
             </dependency>
             <!-- END Tapestry -->
             <!-- handles RSS parsing -->
@@ -573,7 +573,7 @@
      -->
         <repository>
             <id>apache.snapshots</id>
-	    <url>http://repository.apache.org/snapshots/</url>
+	        <url>http://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
