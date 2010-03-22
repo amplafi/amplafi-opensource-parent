@@ -593,6 +593,20 @@
                 <checksumPolicy>warn</checksumPolicy>
             </snapshots>
         </repository>
+        <repository>
+            <id>maven2-repository.jboss.org</id>
+            <name>Repository for jboss/hibernate code</name>
+            <url>http://repository.jboss.com/maven2/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <!-- every 5 days-->
+                <updatePolicy>interval:7200</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
     <build>
         <defaultGoal>install</defaultGoal>
