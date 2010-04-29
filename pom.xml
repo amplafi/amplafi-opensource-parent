@@ -412,12 +412,6 @@
                 <artifactId>jdom</artifactId>
                 <version>1.0</version>
             </dependency>
-            <!-- Scheduling QUARTZ -->
-            <dependency>
-                <groupId>org.opensymphony</groupId>
-                <artifactId>quartz</artifactId>
-                <version>1.6.5</version>
-            </dependency>
             <!-- BEGIN jmx -->
             <dependency>
                 <groupId>hivemind</groupId>
