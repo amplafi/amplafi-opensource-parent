@@ -601,6 +601,20 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>maven2-springsource</id>
+            <name>Repository for springsource</name>
+            <url>http://maven.springframework.org/release/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <!-- every 5 days-->
+                <updatePolicy>interval:7200</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
     </repositories>
     <build>
         <defaultGoal>install</defaultGoal>
