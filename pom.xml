@@ -601,6 +601,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <!-- some files seem to be available on the offical mvnrepository ( 2.0.1+ versions of springsecurity for example)  -->
         <repository>
             <id>maven2-springsource</id>
             <name>Repository for springsource</name>
