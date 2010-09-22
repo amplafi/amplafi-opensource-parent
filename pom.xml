@@ -123,8 +123,8 @@
         <maven-resources-plugin-build>2.4</maven-resources-plugin-build>
         <maven-source-plugin-build>2.1</maven-source-plugin-build>
         <maven-site-plugin-build>2.0.1</maven-site-plugin-build>
-        <maven-surefire-plugin-build>2.5</maven-surefire-plugin-build>
-        <maven-surefire-report-plugin-build>2.5</maven-surefire-report-plugin-build>
+        <maven-surefire-plugin-build>2.6</maven-surefire-plugin-build>
+        <maven-surefire-report-plugin-build>2.6</maven-surefire-report-plugin-build>
         <wagon-build>1.0-beta-2</wagon-build>
         <pmd-build>4.2.5</pmd-build>
         <pmd-plugin-build>2.4</pmd-plugin-build>        
@@ -220,8 +220,9 @@
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
-        <tapestry5-build>5.1.0.5</tapestry5-build>
-        <testng-build>5.14</testng-build>
+        <tapestry5-build>5.1.0.5</tapestry5-build>  
+        <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
+        <testng-build>5.12.1</testng-build>
         <tomcat-build>5.5.28</tomcat-build>
         <xom-build>1.1</xom-build>        
     </properties>
