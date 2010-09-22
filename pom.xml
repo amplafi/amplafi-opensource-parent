@@ -221,7 +221,7 @@
         <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
         <tapestry5-build>5.1.0.5</tapestry5-build>
-        <testng-build>5.13.1</testng-build>
+        <testng-build>5.14</testng-build>
         <tomcat-build>5.5.28</tomcat-build>
         <xom-build>1.1</xom-build>        
     </properties>
