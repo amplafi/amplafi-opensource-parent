@@ -209,7 +209,7 @@
         <oauth-client-build>20090617</oauth-client-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
-        <quartz-build>1.8.0</quartz-build>
+        <quartz-build>1.8.3</quartz-build>
         <quickr-build>0.8.1-SNAPSHOT</quickr-build>
         <rome-build>1.0</rome-build>
         <selenium-build>1.0.5</selenium-build>
