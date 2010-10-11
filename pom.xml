@@ -646,7 +646,7 @@
      -->
         <repository>
             <id>apache.snapshots</id>
-	        <url>http://repository.apache.org/snapshots/</url>
+            <url>http://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -998,7 +998,7 @@
         </pluginRepository>
         <pluginRepository>
             <id>apache.snapshots</id>
-	    <url>http://repository.apache.org/snapshots/</url>
+        <url>http://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -1042,7 +1042,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-				<version>${maven-surefire-report-plugin-build}</version>
+                <version>${maven-surefire-report-plugin-build}</version>
                 <configuration>
                     <executions>
                         <execution>
