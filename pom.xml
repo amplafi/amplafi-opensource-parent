@@ -565,6 +565,7 @@
                 <version>${easymock-class-build}</version>
                 <scope>test</scope>
             </dependency>
+            <!-- I don't think any opensource code is using selenium
             <dependency>
                 <groupId>org.openqa.selenium.client-drivers</groupId>
                 <artifactId>selenium-java-client-driver</artifactId>
@@ -602,6 +603,7 @@
                 <artifactId>bcprov-jdk15</artifactId>
                 <version>${bouncycastle-build}</version>
             </dependency>
+             -->
 
             <dependency>
                 <groupId>xmlunit</groupId>
