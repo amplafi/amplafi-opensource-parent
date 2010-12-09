@@ -95,7 +95,7 @@
     <distributionManagement>
         <repository>
             <id>amplafi.public</id>
-            <url>ftp://amplafi.com/httpdocs/repository</url>
+            <url>ftp://maven.amplafi.com/</url>
         </repository>
     </distributionManagement>
     <properties>
@@ -661,7 +661,7 @@
         </repository>
         <repository>
             <id>amplafi.public</id>
-            <url>http://amplafi.com/repository/</url>
+            <url>http://maven.amplafi.com/</url>
             <releases>
                 <checksumPolicy>warn</checksumPolicy>
             </releases>
@@ -1027,7 +1027,7 @@
         <!-- 
         <pluginRepository>
             <id>amplafi-public-plugins</id>
-            <url>http://amplafi.com/repository</url>
+            <url>http://maven.amplafi.com/</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>warn</updatePolicy>
