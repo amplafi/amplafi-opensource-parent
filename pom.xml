@@ -22,7 +22,7 @@
     </organization>
     <packaging>pom</packaging>
     <scm>
-        <developerConnection>scm:svn:${svn-base}/${project.artifactId}/trunk</developerConnection>
+        <developerConnection>scm:git:${github-base}${project.artifactId}.git</developerConnection>
     </scm>
     <developers>
         <developer>
@@ -100,6 +100,7 @@
     </distributionManagement>
     <properties>
         <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow</svn-base>
+        <github-base>git@github.com:amplafi/</github-base>
         <android-java-build>1.5</android-java-build>
         <selenium-server-build>1.0.1</selenium-server-build>
         <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
