@@ -1224,7 +1224,7 @@
             <modules>
                 <module>../htmlcleaner</module>
                 <module>../jericho-html</module>
-                <module>../amplafi-tapestry-javaforge</module>
+                <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
@@ -1241,7 +1241,7 @@
                 <defaultGoal>deploy</defaultGoal>
             </build>
             <modules>
-                <module>../amplafi-tapestry-javaforge</module>
+                <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
                 <module>../amplafi-hivemind</module>
             </modules>
