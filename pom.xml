@@ -167,10 +167,8 @@
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
         <ehcache-web-build>2.0.2</ehcache-web-build>
         <freemarker-build>2.3.16</freemarker-build>
-        <google-collect-build>1.0-rc2</google-collect-build>
         <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
         <google-gdata-appsforyourdomain-build>1.0</google-gdata-appsforyourdomain-build>
-        <google-gdata-base-build>1.0</google-gdata-base-build>
         <google-gdata-blogger-build>2.0</google-gdata-blogger-build>
         <google-gdata-books-build>1.0</google-gdata-books-build>
         <google-gdata-calendar-build>2.0</google-gdata-calendar-build>
