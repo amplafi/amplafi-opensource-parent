@@ -133,11 +133,7 @@
         <jxr-build>2.1</jxr-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
-        <amplafi-confidential-svn>${amplafi-svn-base}/wireservice/trunk/amplafi/</amplafi-confidential-svn>
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
-        <amplafi-flow-svn>${amplafi-svn-base}/amplafi-flow/</amplafi-flow-svn>
-        <amplafi-modified-opensource-svn>${amplafi-svn-base}/modified-opensource/</amplafi-modified-opensource-svn>
-        <amplafi-svn-base>https://svn1.hosted-projects.com/transparentpolitics</amplafi-svn-base>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <ant-build>1.8.1</ant-build>
         <apache-httpcomponents-build>4.1</apache-httpcomponents-build>
@@ -166,27 +162,10 @@
         <ehcache-build>2.2.0</ehcache-build>
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
         <ehcache-web-build>2.0.2</ehcache-web-build>
-        <freemarker-build>2.3.16</freemarker-build>
-        <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
-        <google-gdata-appsforyourdomain-build>1.0</google-gdata-appsforyourdomain-build>
-        <google-gdata-blogger-build>2.0</google-gdata-blogger-build>
-        <google-gdata-books-build>1.0</google-gdata-books-build>
-        <google-gdata-calendar-build>2.0</google-gdata-calendar-build>
-        <google-gdata-client-build>1.0</google-gdata-client-build>
-        <google-gdata-codesearch-build>2.0</google-gdata-codesearch-build>
-        <google-gdata-contacts-build>3.0</google-gdata-contacts-build>
-        <google-gdata-core-build>1.0</google-gdata-core-build>
-        <google-gdata-docs-build>3.0</google-gdata-docs-build>
-        <google-gdata-finance-build>2.0</google-gdata-finance-build>
-        <google-gdata-health-build>2.0</google-gdata-health-build>
-        <google-gdata-maps-build>2.0</google-gdata-maps-build>
-        <google-gdata-media-build>1.0</google-gdata-media-build>
-        <google-gdata-photos-build>2.0</google-gdata-photos-build>
-        <google-gdata-sidewiki-build>2.0</google-gdata-sidewiki-build>
-        <google-gdata-spreadsheet-build>3.0</google-gdata-spreadsheet-build>
-        <google-gdata-webmastertools-build>2.0</google-gdata-webmastertools-build>
-        <google-gdata-youtube-build>2.0</google-gdata-youtube-build>
-        <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
+        
+        <google-guava-build>r07</google-guava-build>
+        <findbugs-build>1.3.9</findbugs-build>
+        
         <hivemind-build>1.1.1</hivemind-build>
         <htmlcleaner-build>2.2-amplafi-SNAPSHOT</htmlcleaner-build>
         <james-mailet-build>3.0</james-mailet-build>
@@ -199,7 +178,6 @@
         <jericho-htmlparser-build>3.2-amplafi-SNAPSHOT</jericho-htmlparser-build>
         <jetty-build>6.1.15</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
-        <jsr305-build>1.0</jsr305-build>
         <junit-build>4.7</junit-build>
         <liquibase-build>1.9.5</liquibase-build>
         <log4j-build>1.2.15</log4j-build>
@@ -227,6 +205,27 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!--  google gdata libraries -->
+            <!--  google gdata libraries -->
+            <!-- Note: 27 dec 2010 PAT guava not used but want to make available to explore to see if we should use google's guava. This is the complete guava. -->        
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google-guava-build}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>           
+            
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>${findbugs-build}</version>
+            </dependency>            
+            
             <dependency>
                 <groupId>net.sf.json-lib</groupId>
                 <artifactId>json-lib</artifactId>
