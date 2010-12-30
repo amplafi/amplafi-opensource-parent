@@ -135,7 +135,7 @@
         
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
-        <ant-build>1.8.1</ant-build>
+        <ant-build>1.8.2</ant-build>
         <apache-httpcomponents-build>4.1</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.0.3</apache-httpcomponents-client-build>
         <apache-mime4j-build>0.6</apache-mime4j-build>
