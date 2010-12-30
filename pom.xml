@@ -99,45 +99,51 @@
         </repository>
     </distributionManagement>
     <properties>
-        <svn-base>https://svn1.hosted-projects.com/transparentpolitics/amplafi-flow</svn-base>
         <github-base>git@github.com:amplafi/</github-base>
         <android-java-build>1.5</android-java-build>
-        <selenium-server-build>1.0.1</selenium-server-build>
-        <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
-        <!-- needed because 135 disappeared! used by selenium -->
-        <bouncycastle-build>136</bouncycastle-build>
+        <!-- TODO: 19 mar 2010  selenium is at http://seleniumhq.org/  -->
+        <maven-selenium-plugin-build>1.1</maven-selenium-plugin-build>
+        <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
+
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
-        <maven-assembly-plugin-build>2.2-beta-4</maven-assembly-plugin-build>
-        <maven-checkstyle-plugin-build>2.3</maven-checkstyle-plugin-build>
-        <maven-clean-plugin-build>2.3</maven-clean-plugin-build>
+        <maven-assembly-plugin-build>2.2</maven-assembly-plugin-build>
+        <maven-checkstyle-plugin-build>2.6</maven-checkstyle-plugin-build>
+        <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
         <maven-compiler-plugin-build>2.1</maven-compiler-plugin-build>
-        <cobertura-maven-plugin-build>2.3</cobertura-maven-plugin-build>
+        <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.1</maven-dependency-plugin-build>
-        <maven-deploy-plugin-build>2.4</maven-deploy-plugin-build>
-        <maven-eclipse-plugin-build>2.7</maven-eclipse-plugin-build>
-        <maven-javadoc-plugin-build>2.3</maven-javadoc-plugin-build>
-        <maven-install-plugin-build>2.3</maven-install-plugin-build>
+        <maven-deploy-plugin-build>2.5</maven-deploy-plugin-build>
+        <maven-eclipse-plugin-build>2.8</maven-eclipse-plugin-build>
+        <maven-install-plugin-build>2.3</maven-install-plugin-build>        
+        <maven-javadoc-plugin-build>2.6</maven-javadoc-plugin-build>
         <maven-jar-plugin-build>2.3</maven-jar-plugin-build>
-        <buildnumber-maven-plugin-build>1.0-beta-1</buildnumber-maven-plugin-build>
-        <maven-project-info-reports-plugin-build>2.1.2</maven-project-info-reports-plugin-build>
-        <maven-release-plugin-build>2.0-beta-9</maven-release-plugin-build>
+        <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
+        <jxr-build>2.2</jxr-build>
+        <maven-tomcat-plugin-build>1.0-beta-1</maven-tomcat-plugin-build>
+        <buildnumber-maven-plugin-build>1.0-beta-4</buildnumber-maven-plugin-build>
+        <properties-maven-plugin-build>1.0-alpha-2</properties-maven-plugin-build>
+        <maven-project-info-reports-plugin-build>2.3.1</maven-project-info-reports-plugin-build>
+        <maven-release-plugin-build>2.1</maven-release-plugin-build>
         <maven-repository-plugin-build>2.3</maven-repository-plugin-build>
-        <maven-resources-plugin-build>2.4</maven-resources-plugin-build>
-        <maven-source-plugin-build>2.1</maven-source-plugin-build>
-        <maven-site-plugin-build>2.0.1</maven-site-plugin-build>
+        <maven-resources-plugin-build>2.4.3</maven-resources-plugin-build>
+        <maven-source-plugin-build>2.1.2</maven-source-plugin-build>
+        <maven-site-plugin-build>2.1.1</maven-site-plugin-build>
+        <pmd-build>4.2.5</pmd-build>
+        <pmd-plugin-build>2.5</pmd-plugin-build>        
         <maven-surefire-plugin-build>2.6</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.6</maven-surefire-report-plugin-build>
-        <wagon-build>1.0-beta-2</wagon-build>
-        <pmd-build>4.2.5</pmd-build>
-        <pmd-plugin-build>2.4</pmd-plugin-build>        
-        <jxr-build>2.1</jxr-build>
+        
+        <maven-war-plugin-build>2.1.1</maven-war-plugin-build>
+        <wagon-build>1.0-beta-7</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
+        <amplafi-confidential-svn>${amplafi-svn-base}/wireservice/trunk/amplafi/</amplafi-confidential-svn>
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
+        <amplafi-svn-base>https://svn1.hosted-projects.com/transparentpolitics</amplafi-svn-base>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <ant-build>1.8.2</ant-build>
         <apache-httpcomponents-build>4.1</apache-httpcomponents-build>
-        <apache-httpcomponents-client-build>4.0.3</apache-httpcomponents-client-build>
+        <apache-httpcomponents-client-build>4.1-beta1</apache-httpcomponents-client-build>
         <apache-mime4j-build>0.6</apache-mime4j-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
@@ -145,27 +151,50 @@
         <c3p0-build>0.9.1.2</c3p0-build>
         <com-amplafi-build>0.9-SNAPSHOT</com-amplafi-build>
         <commons-beanutils-build>1.8.3</commons-beanutils-build>
-        <commons-codec-build>1.3</commons-codec-build>
+        <commons-codec-build>1.4</commons-codec-build>
         <commons-collections-build>3.2.1</commons-collections-build>
         <commons-digester-build>1.8.1</commons-digester-build>
-        <commons-email-build>1.1</commons-email-build>
+        <commons-email-build>1.2</commons-email-build>
         <commons-httpclient-build>3.1</commons-httpclient-build>
-        <commons-io-build>2.0</commons-io-build>
-        <commons-lang-build>2.4</commons-lang-build>
+        <commons-io-build>2.0.1</commons-io-build>
+        <commons-lang-build>2.5</commons-lang-build>
         <commons-logging-build>1.1.1</commons-logging-build>
-        <commons-net-build>2.0</commons-net-build>
-        <commons-pool-build>1.4</commons-pool-build>
+        <commons-net-build>2.2</commons-net-build>
+        <commons-pool-build>1.5.5</commons-pool-build>
         <commons-proxy-build>1.0</commons-proxy-build>
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>2.5.2</easymock-build>
         <easymock-class-build>2.5.2</easymock-class-build>
-        <ehcache-build>2.2.0</ehcache-build>
+        <ehcache-build>2.3.1</ehcache-build>
+        <ehcache-terracotta-build>2.2.0</ehcache-terracotta-build>
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
-        <ehcache-web-build>2.0.2</ehcache-web-build>
-        
+        <ehcache-web-build>2.0.3</ehcache-web-build>
+        <freemarker-build>2.3.16</freemarker-build>
         <google-guava-build>r07</google-guava-build>
         <findbugs-build>1.3.9</findbugs-build>
+        <!-- jsr305 seems to be coupled with findbugs
+                <jsr305-build>1.</jsr305-build>  -->
         
+        <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
+        <google-gdata-appsforyourdomain-build>1.0</google-gdata-appsforyourdomain-build>
+        <google-gdata-blogger-build>2.0</google-gdata-blogger-build>
+        <google-gdata-books-build>1.0</google-gdata-books-build>
+        <google-gdata-calendar-build>2.0</google-gdata-calendar-build>
+        <google-gdata-client-build>1.0</google-gdata-client-build>
+        <google-gdata-codesearch-build>2.0</google-gdata-codesearch-build>
+        <google-gdata-contacts-build>3.0</google-gdata-contacts-build>
+        <google-gdata-core-build>1.0</google-gdata-core-build>
+        <google-gdata-docs-build>3.0</google-gdata-docs-build>
+        <google-gdata-finance-build>2.0</google-gdata-finance-build>
+        <google-gdata-health-build>2.0</google-gdata-health-build>
+        <google-gdata-maps-build>2.0</google-gdata-maps-build>
+        <google-gdata-media-build>1.0</google-gdata-media-build>
+        <google-gdata-photos-build>2.0</google-gdata-photos-build>
+        <google-gdata-sidewiki-build>2.0</google-gdata-sidewiki-build>
+        <google-gdata-spreadsheet-build>3.0</google-gdata-spreadsheet-build>
+        <google-gdata-webmastertools-build>2.0</google-gdata-webmastertools-build>
+        <google-gdata-youtube-build>2.0</google-gdata-youtube-build>
+        <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
         <hivemind-build>1.1.1</hivemind-build>
         <htmlcleaner-build>2.2-amplafi-SNAPSHOT</htmlcleaner-build>
         <james-mailet-build>3.0</james-mailet-build>
@@ -176,32 +205,34 @@
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.0</jdom-build>
         <jericho-htmlparser-build>3.2-amplafi-SNAPSHOT</jericho-htmlparser-build>
-        <jetty-build>6.1.15</jetty-build>
+        <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
-        <junit-build>4.7</junit-build>
+        <junit-build>4.8.2</junit-build>
         <liquibase-build>1.9.5</liquibase-build>
         <log4j-build>1.2.15</log4j-build>
-        <mysql-connector-java-build>5.1.13</mysql-connector-java-build>
+        <mysql-connector-java-build>5.1.14</mysql-connector-java-build>
         <oauth-build>20090531</oauth-build>
         <oauth-client-build>20090617</oauth-client-build>
+        <openutils-log4j-build>2.0.5</openutils-log4j-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
-        <quartz-build>1.8.3</quartz-build>
+        <quartz-build>1.8.4</quartz-build>
+        <!-- available at https://quickr-flickr.dev.java.net/ last checked 17 dec 2010 -->
         <quickr-build>0.8.1-SNAPSHOT</quickr-build>
         <rome-build>1.0</rome-build>
         <selenium-build>1.0.5</selenium-build>
         <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
         <slf4j-build>1.5.8</slf4j-build>
         <spring-build>3.0.4.RELEASE</spring-build>
-        <spring-security-build>3.0.3.RELEASE</spring-security-build>
+        <spring-security-build>3.0.4.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
         <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
-        <tapestry5-build>5.2.4</tapestry5-build>  
+        <tapestry5-build>5.2.4</tapestry5-build>
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
         <testng-build>5.12.1</testng-build>
-        <tomcat-build>5.5.28</tomcat-build>
-        <xom-build>1.1</xom-build>        
+        <tomcat-build>5.5.31</tomcat-build>
+        <xom-build>1.1</xom-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -378,7 +409,7 @@
             <dependency>
                 <groupId>commons-httpclient</groupId>
                 <artifactId>commons-httpclient</artifactId>
-                <version>3.1</version>
+                <version>${commons-httpclient-build}</version>
             </dependency>
             <!-- javax* -->
             <dependency>
@@ -605,7 +636,7 @@
             <dependency>
                 <groupId>xmlunit</groupId>
                 <artifactId>xmlunit</artifactId>
-                <version>1.2</version>
+                <version>1.3</version>
                 <scope>test</scope>
             </dependency>
             <!--
