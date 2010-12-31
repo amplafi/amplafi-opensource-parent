@@ -109,7 +109,7 @@
         <maven-assembly-plugin-build>2.2</maven-assembly-plugin-build>
         <maven-checkstyle-plugin-build>2.6</maven-checkstyle-plugin-build>
         <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
-        <maven-compiler-plugin-build>2.1</maven-compiler-plugin-build>
+        <maven-compiler-plugin-build>2.3.1</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.1</maven-dependency-plugin-build>
         <maven-deploy-plugin-build>2.5</maven-deploy-plugin-build>
@@ -160,8 +160,8 @@
         <commons-lang-build>2.5</commons-lang-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <commons-net-build>2.2</commons-net-build>
-        <commons-pool-build>1.5.5</commons-pool-build>
         <commons-proxy-build>1.0</commons-proxy-build>
+
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>2.5.2</easymock-build>
         <easymock-class-build>2.5.2</easymock-class-build>
@@ -222,7 +222,7 @@
         <rome-build>1.0</rome-build>
         <selenium-build>1.0.5</selenium-build>
         <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
-        <slf4j-build>1.5.8</slf4j-build>
+        <slf4j-build>1.6.1</slf4j-build>
         <spring-build>3.0.4.RELEASE</spring-build>
         <spring-security-build>3.0.4.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
@@ -390,16 +390,6 @@
                         <artifactId>mail</artifactId>
                     </exclusion>                              
                 </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>commons-proxy</groupId>
-                <artifactId>commons-proxy</artifactId>
-                <version>1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-pool</groupId>
-                <artifactId>commons-pool</artifactId>
-                <version>1.4</version>
             </dependency>
             <dependency>
                 <groupId>oro</groupId>
