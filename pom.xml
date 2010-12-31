@@ -160,6 +160,8 @@
         <commons-lang-build>2.5</commons-lang-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <commons-net-build>2.2</commons-net-build>
+        <commons-proxy-build>1.0</commons-proxy-build>
+
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>2.5.2</easymock-build>
         <easymock-class-build>2.5.2</easymock-class-build>
