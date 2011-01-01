@@ -222,7 +222,7 @@
         <rome-build>1.0</rome-build>
         <selenium-build>1.0.5</selenium-build>
         <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
-        <slf4j-build>1.6.1</slf4j-build>
+        <slf4j-build>1.5.8</slf4j-build>
         <spring-build>3.0.4.RELEASE</spring-build>
         <spring-security-build>3.0.4.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
