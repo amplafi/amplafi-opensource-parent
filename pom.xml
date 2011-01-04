@@ -141,6 +141,11 @@
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
         <amplafi-svn-base>https://svn1.hosted-projects.com/transparentpolitics</amplafi-svn-base>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
+        <amplafi-tapestry4-springsecurity-build>1.0</amplafi-tapestry4-springsecurity-build>
+        <amplafi-hivemind-build>1.0</amplafi-hivemind-build>
+        <amplafi-tapestry4-test-build>1.0</amplafi-tapestry4-test-build>
+        <amplafi-json-build>1.0</amplafi-json-build>
+        <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
         <ant-build>1.8.2</ant-build>
         <apache-httpcomponents-build>4.1</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.1-beta1</apache-httpcomponents-client-build>
@@ -196,7 +201,7 @@
         <google-gdata-youtube-build>2.0</google-gdata-youtube-build>
         <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
         <hivemind-build>1.1.1</hivemind-build>
-        <htmlcleaner-build>2.2-amplafi-SNAPSHOT</htmlcleaner-build>
+        <amplafi-htmlcleaner-build>2.2.a1</amplafi-htmlcleaner-build>
         <james-mailet-build>3.0</james-mailet-build>
         <java-build>1.6</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
@@ -204,7 +209,7 @@
         <javax-servlet-api-build>2.5</javax-servlet-api-build>
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.0</jdom-build>
-        <jericho-htmlparser-build>3.2-amplafi-SNAPSHOT</jericho-htmlparser-build>
+        <amplafi-jericho-htmlparser-build>3.2.a1</amplafi-jericho-htmlparser-build>
         <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
         <junit-build>4.8.2</junit-build>
@@ -222,7 +227,7 @@
         <rome-build>1.0</rome-build>
         <selenium-build>1.0.5</selenium-build>
         <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
-        <slf4j-build>1.5.8</slf4j-build>
+        <slf4j-build>1.5.11</slf4j-build>
         <spring-build>3.0.4.RELEASE</spring-build>
         <spring-security-build>3.0.4.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
