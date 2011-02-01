@@ -175,7 +175,7 @@
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
         <ehcache-web-build>2.0.3</ehcache-web-build>
         <freemarker-build>2.3.16</freemarker-build>
-        <google-guava-build>r07</google-guava-build>
+        <google-guava-build>r08</google-guava-build>
         <findbugs-build>1.3.9</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs
                 <jsr305-build>1.</jsr305-build>  -->
