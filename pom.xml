@@ -170,7 +170,7 @@
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>2.5.2</easymock-build>
         <easymock-class-build>2.5.2</easymock-class-build>
-        <ehcache-build>2.3.1</ehcache-build>
+        <ehcache-build>2.4.1</ehcache-build>
         <ehcache-terracotta-build>2.2.0</ehcache-terracotta-build>
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
         <ehcache-web-build>2.0.3</ehcache-web-build>
@@ -209,7 +209,7 @@
         <javax-servlet-api-build>2.5</javax-servlet-api-build>
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.0</jdom-build>
-        <amplafi-jericho-htmlparser-build>3.2.a3</amplafi-jericho-htmlparser-build>
+        <amplafi-jericho-htmlparser-build>3.2.a4</amplafi-jericho-htmlparser-build>
         <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
         <junit-build>4.8.2</junit-build>
@@ -580,7 +580,7 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.0.1-FINAL</version>
+                <version>3.8-beta1</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
