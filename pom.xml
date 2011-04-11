@@ -156,7 +156,7 @@
         <c3p0-build>0.9.1.2</c3p0-build>
         <com-amplafi-build>0.9-SNAPSHOT</com-amplafi-build>
         <commons-beanutils-build>1.8.3</commons-beanutils-build>
-        <commons-codec-build>1.4</commons-codec-build>
+        <commons-codec-build>1.5</commons-codec-build>
         <commons-collections-build>3.2.1</commons-collections-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <commons-email-build>1.2</commons-email-build>
