@@ -1486,7 +1486,6 @@
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-flow-tapestry4</module>
                 <module>../amplafi-flow-tapestry5</module>
-                <module>../amplafi-android</module>
             </modules>
         </profile>
         <profile>
