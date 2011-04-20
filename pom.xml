@@ -1467,7 +1467,7 @@
         </profile>
         <!-- full deploy of everything -->
         <profile>
-            <id>All</id>
+            <id>All-no-android</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -1486,6 +1486,26 @@
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-flow-tapestry4</module>
                 <module>../amplafi-flow-tapestry5</module>
+            </modules>
+        </profile>
+         <profile>
+            <id>All</id>
+            <build>
+                <defaultGoal>install</defaultGoal>
+            </build>
+            <modules>
+                <module>../htmlcleaner</module>
+                <module>../jericho-html</module>
+                <module>../amplafi-tapestry4-springsecurity</module>
+                <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-hivemind</module>
+                <module>../amplafi-sworddance</module>
+                <module>../amplafi-json</module>
+                <module>../amplafi-flow-client</module>
+                <module>../amplafi-flow-core</module>
+                <module>../amplafi-flow-tapestry4</module>
+                <module>../amplafi-flow-tapestry5</module>
+                <module>../amplafi-android</module>
             </modules>
         </profile>
         <profile>
