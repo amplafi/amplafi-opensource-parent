@@ -208,7 +208,7 @@
         <javax-mail-build>1.4.3</javax-mail-build>
         <javax-servlet-api-build>2.5</javax-servlet-api-build>
         <jaxen-build>1.1.1</jaxen-build>
-        <jdom-build>1.0</jdom-build>
+        <jdom-build>1.1</jdom-build>
         <amplafi-jericho-htmlparser-build>3.2.a4</amplafi-jericho-htmlparser-build>
         <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
