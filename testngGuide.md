@@ -5,7 +5,7 @@ For new eclipse users
 Make sure that you have the [testng plugin installed on Eclipse](https://github.com/amplafi/amplafi-tools/blob/master/README.md).
 The instructions are in the section marked **Install these Eclipse Plugins**. 
 
-These rules apply to all of the amplafi projects when looking for tests.
+These rules apply to all of the amplafi projects when looking for tests.  
 1. Every project has its tests in a separate source folder called _test_.
 2. The test source folder packages parallel the main code packages.
 
