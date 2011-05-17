@@ -523,6 +523,12 @@
             <!-- END Tapestry -->
             <!-- handles RSS parsing -->
             <dependency>
+                <groupId>org.jdom</groupId>
+                <artifactId>jdom</artifactId>
+                <version>${jdom-build}</version>
+            </dependency>
+            <dependency>
+                <!-- old location -->
                 <groupId>jdom</groupId>
                 <artifactId>jdom</artifactId>
                 <version>${jdom-build}</version>
