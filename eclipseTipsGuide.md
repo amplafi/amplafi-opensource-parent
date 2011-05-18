@@ -9,9 +9,26 @@ look and re-look at the items in the menu every time you change selections, edit
 the general context in any way. This will help you to know what options are available for all of 
 the views, editors, etc.
 
+## Eclipse Help##
+Eclipse comes with a very extensive guide to using eclipse please spend the time to read it. This 
+guide can be accessed from the _help > Help Contents_ menu.  
+[Accessing the Eclipse User guide](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelpMenu.png)
+When the help window is open on the left there is a tree of topics. To start with read the part 
+titled _Workbench User Guide_ this guide talks about the general mechanisms of eclipse, such as 
+perspectives and views. Once you have read that go on to read _Java development user guide_ this 
+guide focuses on programming in Java with the Eclipse tool.  
+[Read first](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelp.png)  
 
+In addition to these great help files that introduce the new user to eclipse we also have tips and 
+tricks sections for really pushing what you can do with the tool. You can access the tips and tricks 
+directly through the help menu (_Help > Tips and Tricks..._).  
+[Accessing the tips and tricks](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricks.png)  
+There will be another menu that pops up asking which category of tips and tricks you would like 
+to view. Choose _Eclipse Java Development Tools_ (or explore if you like).
+[Choosing the tips and tricks category](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricksChooser.png)  
+The Eclipse tips and tricks are really compact so I will go through a few of them to get the new
+user more familiar with a few of the _must know_ items.  
 
-<!-- TODO: add guide to menu item help> tips and tricks - read it.-->
 <!-- TODO: add guide to change what tasks show up in the task view. -->
 <!-- TODO: add guide to change what you are warned about in the java compiler. -->
 <!-- TODO: add guide to Format code !!!-->
