@@ -44,8 +44,25 @@ Look at that! Eclipse suggests two classes based on those capital letters. What 
 function of what is on your classpath and what is visible to the context of the code block you are 
 writing in. Isn't this great?
 
+## Warnings and Errors##
+Another really useful tool in eclipse is the ability to customise the way Eclipse warns you about your 
+code. Lets say that you really hate it when someone accesses a static member from an instance and you 
+would like to get an error instead of a warning when this is found in code. Well you can change Eclipse 
+to do that I will show you how.
+
+1. Open the preferences menu (_Window > Preferences_).  
+![preferences menu](https://github.com/amplafi/amplafi-tools/raw/master/readme-images/openPreferences.png)
+2. Navigate to the errors/warnings section (_Java > Compiler > Errors/Warnings_).
+3. Expand _Code Style_ if it is not already.
+4. Change the option marked "Non-static access to static member" to say _Error_ instead of _Warning_.
+5. Click OK and you are done, the workspace will update with your new preferences.
+![errors/warnings](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseErrorsWarnings.png)
+
+Did you notice all of those items marked _Ignore_? Perhaps there is something that Eclipse is not telling you.
+Spend some time in this menu and really get to know what reporting options you have. It might be worth it to 
+turn all of these items marked _Ignore_ to _Warning_ so you can see all of the options in action.
+
 <!-- TODO: add guide to change what tasks show up in the task view. -->
-<!-- TODO: add guide to change what you are warned about in the java compiler. -->
 <!-- TODO: add guide to Format code !!!-->
 <!-- TODO: add guide to quickly move between objects by their relationship to each other. -->
     <!-- TODO: add guide for using F3-->
