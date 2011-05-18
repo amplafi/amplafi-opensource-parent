@@ -62,6 +62,27 @@ Did you notice all of those items marked _Ignore_? Perhaps there is something th
 Spend some time in this menu and really get to know what reporting options you have. It might be worth it to 
 turn all of these items marked _Ignore_ to _Warning_ so you can see all of the options in action.
 
+## Debugging with Eclipse##
+There are already two great guide for this. Please read them.  
+[Eclipse Help](http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-13.htm)  
+[Java Debugging with Eclipse - by Lars Vogel](http://www.vogella.de/articles/EclipseDebugging/article.html#advanced_class)
+
+### Stepping Through Code###
+While stepping through code there are some keyboard shortcuts.
+
+* F5 Steps into code
+* F6 Steps over code
+* F7 Steps out of code (answers "oops, I stepped in how do I get out?")
+* F8 Runs to the next breakpoint
+
+### Viewing variables###
+In the _Variables_ view, highlighting a variable will render it with the objects toString() method.
+Sometimes this method overridden, or sometimes it doesn't display the information you would like. You
+can create a new detail formatter to change how that type of object is rendered without changing code in
+the program. Use the links below and read more on Detail formatters.  
+[Great guide to detail formatters](http://eclipser-blog.blogspot.com/2007/10/tips-trick-for-debigging-in-eclipse.html)
+[Great detail formatter for Document Object Model (DOM) nodes](http://www.howardism.org/Technical/Eclipse/Eclipse_Detail_Formatter.html)
+
 <!-- TODO: add guide to change what tasks show up in the task view. -->
 <!-- TODO: add guide to Format code !!!-->
 <!-- TODO: add guide to quickly move between objects by their relationship to each other. -->
@@ -72,23 +93,7 @@ turn all of these items marked _Ignore_ to _Warning_ so you can see all of the o
 <!-- TODO: add guide to searching in files, the project, the workspace. Should also include info on searching for objects, and other types of items. -->
 <!-- TODO: add guide to Refactor. -->
     <!-- TODO: add guide to rename a variable as an introduction to the refactor menu.-->
-<!-- TODO: add guide to Debugging - this article covers debuggin well enough that most of these items do not need to be covered. http://www.vogella.de/articles/EclipseDebugging/article.html#advanced_class -->
-    <!-- TODO: add guide to add breakpoints-->
-        <!-- TODO: add guide to create an exception breakpoint. -->
-        <!-- TODO: add guide to add a class load breakpoint. -->
-        <!-- TODO: add guide to create a variable watchpoint. -->
-        <!-- TODO: add guide to create a method breakpoint. -->
-        <!-- TODO: add guide to create a line breakpoint. -->
-            <!-- TODO: add guide to change the line breakpoint to only break when true or value changes. -->
-<!-- TODO: add guide to step through code.-->
-    <!-- TODO: add guide to F5 -->
-    <!-- TODO: add guide to F6 -->
-    <!-- TODO: add guide to F7 -->
-    <!-- TODO: add guide to F8 -->
-    <!-- TODO: add guide to Hover on variables for values.-->
-    <!-- TODO: add guide to click on the stack trace to go to that line in code. -->
-    <!-- TODO: add guide to look at variables-->
-        <!-- TODO: add guide to add a detail formatter. -->
+
 <!-- TODO: add guide to mylyn tasks -->
     <!-- TODO: add guide to Creating -->
     <!-- TODO: add guide to activating -->
