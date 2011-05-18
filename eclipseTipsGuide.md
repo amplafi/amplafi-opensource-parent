@@ -1,5 +1,16 @@
 # Eclipse Tips Guide#
-<!-- TODO: add guide to let users know that the eclipse menu changes based on the context that you are in while accessing it. (this not only means what file you have open, but what view you have active and what is selected in that view.)-->
+
+## Note on Eclipse Menus##
+Eclipse menus (both the right-click menu and the menu at the top of the application) change all of
+the time. They change when you have different views active, and they also change when you select 
+different items within the view. For example the _Java..._ option under the _Search_ menu is not 
+available when in a text editor, but is available when you are in the Java editor. Take care to 
+look and re-look at the items in the menu every time you change selections, editors, views, or 
+the general context in any way. This will help you to know what options are available for all of 
+the views, editors, etc.
+
+
+
 <!-- TODO: add guide to menu item help> tips and tricks - read it.-->
 <!-- TODO: add guide to change what tasks show up in the task view. -->
 <!-- TODO: add guide to change what you are warned about in the java compiler. -->
