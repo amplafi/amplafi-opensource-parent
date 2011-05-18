@@ -12,20 +12,20 @@ the views, editors, etc.
 ## Eclipse Help##
 Eclipse comes with a very extensive guide to using eclipse please spend the time to read it. This 
 guide can be accessed from the _help > Help Contents_ menu.  
-[Accessing the Eclipse User guide](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelpMenu.png)
+![Accessing the Eclipse User guide](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelpMenu.png)
 When the help window is open on the left there is a tree of topics. To start with read the part 
 titled _Workbench User Guide_ this guide talks about the general mechanisms of eclipse, such as 
 perspectives and views. Once you have read that go on to read _Java development user guide_ this 
 guide focuses on programming in Java with the Eclipse tool.  
-[Read first](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelp.png)  
+![Read first](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseHelp.png)  
 
 In addition to these great help files that introduce the new user to eclipse we also have tips and 
 tricks sections for really pushing what you can do with the tool. You can access the tips and tricks 
 directly through the help menu (_Help > Tips and Tricks..._).  
-[Accessing the tips and tricks](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricks.png)  
+![Accessing the tips and tricks](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricks.png)  
 There will be another menu that pops up asking which category of tips and tricks you would like 
 to view. Choose _Eclipse Java Development Tools_ (or explore if you like).
-[Choosing the tips and tricks category](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricksChooser.png)  
+![Choosing the tips and tricks category](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseTipsAndTricksChooser.png)  
 The Eclipse tips and tricks are really compact so I will go through a few of them to get the new
 user more familiar with a few of the _must know_ items.  
 
@@ -39,7 +39,7 @@ Suppose you would like to create a variable for an InputStreamReader. It is not 
 but when all of the names for classes are this long it quickly becomes both a bother and time consuming.
 Instead of typing the entire thing out lets type all of the capital letters _ISR_ and then hit the 
 content assist shortcut (Ctrl+SPACEBAR).  
-[Content assist at work](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseContentAssist.png)
+![Content assist at work](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseContentAssist.png)
 Look at that! Eclipse suggests two classes based on those capital letters. What it suggests is a 
 function of what is on your classpath and what is visible to the context of the code block you are 
 writing in. Isn't this great?
