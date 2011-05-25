@@ -10,3 +10,5 @@ of the opensource projects for amplafi.
    * Talks about general guidelines for git work-flow.
 * [TestNG in Eclipse](https://github.com/amplafi/amplafi-opensource-parent/blob/master/testngGuide.md)
    * Talks about how to use testNG on the amplafi opensource projects.
+* [Eclipse Tips and Tricks](https://github.com/amplafi/amplafi-opensource-parent/blob/master/eclipseTipsGuide.md)
+   * Takes a new user through general use of the Eclipse tool.

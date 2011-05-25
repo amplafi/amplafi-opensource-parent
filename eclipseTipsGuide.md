@@ -32,13 +32,13 @@ user more familiar with a few of the _must know_ items.
 ## Content Assist##
 One of the most frequently used features of Eclipse is content assist. When typing content assist pops 
 up on the side to make guesses at what you are typing, or to fill the roles of methods you are 
-invoking. You can manually call content assist by pressing the Ctrl+SPACEBAR keys (Mac might be 
-APPLE+SPACEBAR). This works wonders when you combine it with the camel case feature, I will show you.
+invoking. You can manually call content assist by pressing the _Ctrl+SPACEBAR_ keys (Mac might be 
+_APPLE+SPACEBAR_). This works wonders when you combine it with the camel case feature, I will show you.
 
 Suppose you would like to create a variable for an InputStreamReader. It is not really a lot to type
 but when all of the names for classes are this long it quickly becomes both a bother and time consuming.
 Instead of typing the entire thing out lets type all of the capital letters _ISR_ and then hit the 
-content assist shortcut (Ctrl+SPACEBAR).  
+content assist shortcut (_Ctrl+SPACEBAR_).  
 ![Content assist at work](https://github.com/amplafi/amplafi-opensource-parent/raw/master/readme-images/eclipseContentAssist.png)  	
 Look at that! Eclipse suggests two classes based on those capital letters. What it suggests is a 
 function of what is on your classpath and what is visible to the context of the code block you are 
@@ -84,7 +84,7 @@ the program. Use the links below and read more on Detail formatters.
 [Great detail formatter for Document Object Model (DOM) nodes](http://www.howardism.org/Technical/Eclipse/Eclipse_Detail_Formatter.html)
 
 ## Format Code Automatically##
-Did you know that you can format code automatically? Yes, I will show you how it works 
+Did you know that you can format code automatically? I will show you how it works 
 (the reasons for using formatters are illustrated in 
 [this article](http://www.semanticdesigns.com/Products/Formatters/)). 
 
