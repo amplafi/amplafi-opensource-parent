@@ -168,8 +168,8 @@
         <commons-proxy-build>1.0</commons-proxy-build>
 
         <dom4j-build>1.6.1</dom4j-build>
-        <easymock-build>2.5.2</easymock-build>
-        <easymock-class-build>2.5.2</easymock-class-build>
+        <easymock-build>3.0</easymock-build>
+        <easymock-class-build>3.0</easymock-class-build>
         <ehcache-build>2.4.1</ehcache-build>
         <ehcache-terracotta-build>2.2.0</ehcache-terracotta-build>
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
@@ -707,7 +707,7 @@
         <repository>
             <id>maven2-repository.jboss.org</id>
             <name>Repository for jboss/hibernate code</name>
-            <url>http://repository.jboss.com/maven2/</url>
+            <url>http://repository.jboss.com/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
