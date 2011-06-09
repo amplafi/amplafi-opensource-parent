@@ -149,7 +149,7 @@
         <ant-build>1.8.2</ant-build>
         <apache-httpcomponents-build>4.1.1</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.1.1</apache-httpcomponents-client-build>
-        <apache-mime4j-build>0.6</apache-mime4j-build>
+        <apache-mime4j-build>0.6.1</apache-mime4j-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
         <bouncycastle-build>136</bouncycastle-build>
