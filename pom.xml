@@ -143,7 +143,7 @@
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <amplafi-tapestry4-springsecurity-build>1.0</amplafi-tapestry4-springsecurity-build>
         <amplafi-hivemind-build>1.0</amplafi-hivemind-build>
-        <amplafi-tapestry4-test-build>1.0</amplafi-tapestry4-test-build>
+        <amplafi-tapestry4-test-build>1.0.1</amplafi-tapestry4-test-build>
         <amplafi-json-build>1.0.2</amplafi-json-build>
         <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
         <ant-build>1.8.2</ant-build>
