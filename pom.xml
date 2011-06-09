@@ -215,7 +215,7 @@
         <junit-build>4.8.2</junit-build>
         <liquibase-build>1.9.5</liquibase-build>
         <log4j-build>1.2.16</log4j-build>
-        <mysql-connector-java-build>5.1.14</mysql-connector-java-build>
+        <mysql-connector-java-build>5.1.16</mysql-connector-java-build>
         <oauth-build>20090531</oauth-build>
         <oauth-client-build>20090617</oauth-client-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
