@@ -61,8 +61,12 @@ break someone else's project). Instead of rebasing just preform the merge into y
    git branch -D dev_event_cbs  
    git push origin --delete dev_event_cbs </div>
 
+### Further Reading###
+[Git reference](http://gitref.org/)  
+[Pro git book - Professional Version Control](http://progit.org/)
+
 ### References###
-[Avoiding Git Disasters: A Gory Story](http://www.randyfay.com/node/89)
-[A Rebase Workflow for Git](http://www.randyfay.com/node/91)
-[A Git Workflow for Agile Teams](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)
+[Avoiding Git Disasters: A Gory Story](http://www.randyfay.com/node/89)  
+[A Rebase Workflow for Git](http://www.randyfay.com/node/91)  
+[A Git Workflow for Agile Teams](http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html)  
 [A rant from Linus](http://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html)
