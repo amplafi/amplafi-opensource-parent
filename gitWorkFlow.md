@@ -42,7 +42,8 @@
    git rebase --continue </div>
 * When changes are complete then merge to master and push.  
    <div> git checkout master  
-   git merge [branch name] </div>
+   git merge [branch name]  
+   git push </div>
 * Finally delete your working branch  
    <div> git branch -d [branch name] </div>
 
