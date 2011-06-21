@@ -25,7 +25,7 @@
       </div>
    * Then merge the changes.  
       <div> git checkout [branch name]  
-      merge master
+      git merge master
       </div>
 
 ###When your changes are ready###
