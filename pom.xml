@@ -107,18 +107,18 @@
         <maven-assembly-plugin-build>2.2</maven-assembly-plugin-build>
         <maven-checkstyle-plugin-build>2.6</maven-checkstyle-plugin-build>
         <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
-        <maven-compiler-plugin-build>2.3.1</maven-compiler-plugin-build>
+        <maven-compiler-plugin-build>2.3.2</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
-        <maven-dependency-plugin-build>2.1</maven-dependency-plugin-build>
-        <maven-deploy-plugin-build>2.5</maven-deploy-plugin-build>
+        <maven-dependency-plugin-build>2.3</maven-dependency-plugin-build>
+        <maven-deploy-plugin-build>2.6</maven-deploy-plugin-build>
         <maven-eclipse-plugin-build>2.8</maven-eclipse-plugin-build>
-        <maven-install-plugin-build>2.3</maven-install-plugin-build>        
-        <maven-javadoc-plugin-build>2.6</maven-javadoc-plugin-build>
+        <maven-install-plugin-build>2.3.1</maven-install-plugin-build>        
+        <maven-javadoc-plugin-build>2.8</maven-javadoc-plugin-build>
         <maven-jar-plugin-build>2.3</maven-jar-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
         <jxr-build>2.2</jxr-build>
         <maven-tomcat-plugin-build>1.0-beta-1</maven-tomcat-plugin-build>
-        <buildnumber-maven-plugin-build>1.0-beta-4</buildnumber-maven-plugin-build>
+        <buildnumber-maven-plugin-build>1.0</buildnumber-maven-plugin-build>
         <properties-maven-plugin-build>1.0-alpha-2</properties-maven-plugin-build>
         <maven-project-info-reports-plugin-build>2.3.1</maven-project-info-reports-plugin-build>
         <maven-release-plugin-build>2.1</maven-release-plugin-build>
@@ -160,7 +160,7 @@
         <commons-email-build>1.2</commons-email-build>
         <commons-httpclient-build>3.1</commons-httpclient-build>
         <commons-io-build>2.0.1</commons-io-build>
-        <commons-lang-build>2.5</commons-lang-build>
+        <commons-lang-build>2.6</commons-lang-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <commons-net-build>3.0.1</commons-net-build>
         <commons-proxy-build>1.0</commons-proxy-build>
@@ -168,12 +168,12 @@
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.0</easymock-build>
         <easymock-class-build>3.0</easymock-class-build>
-        <ehcache-build>2.4.1</ehcache-build>
+        <ehcache-build>2.4.3</ehcache-build>
         <ehcache-terracotta-build>2.2.0</ehcache-terracotta-build>
         <ehcache-monitor-kit-build>1.0.0</ehcache-monitor-kit-build>
         <ehcache-web-build>2.0.3</ehcache-web-build>
-        <freemarker-build>2.3.16</freemarker-build>
-        <google-guava-build>r08</google-guava-build>
+        <freemarker-build>2.3.18</freemarker-build>
+        <google-guava-build>r09</google-guava-build>
         <findbugs-build>1.3.9</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs
                 <jsr305-build>1.</jsr305-build>  -->
@@ -203,7 +203,7 @@
         <james-mailet-build>3.0</james-mailet-build>
         <java-build>1.6</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
-        <javax-mail-build>1.4.3</javax-mail-build>
+        <javax-mail-build>1.4.4</javax-mail-build>
         <javax-servlet-api-build>2.5</javax-servlet-api-build>
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.1</jdom-build>
@@ -213,7 +213,7 @@
         <junit-build>4.8.2</junit-build>
         <liquibase-build>1.9.5</liquibase-build>
         <log4j-build>1.2.16</log4j-build>
-        <mysql-connector-java-build>5.1.16</mysql-connector-java-build>
+        <mysql-connector-java-build>5.1.17</mysql-connector-java-build>
         <oauth-build>20090531</oauth-build>
         <oauth-client-build>20090617</oauth-client-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
@@ -584,7 +584,7 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.8-beta1</version>
+                <version>3.8-beta3</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
