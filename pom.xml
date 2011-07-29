@@ -99,8 +99,6 @@
     <properties>
         <github-base>git@github.com:amplafi/</github-base>
         <android-java-build>1.5</android-java-build>
-        <!-- TODO: 19 mar 2010  selenium is at http://seleniumhq.org/  -->
-        <maven-selenium-plugin-build>1.1</maven-selenium-plugin-build>
         <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
 
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
@@ -145,9 +143,8 @@
         <amplafi-json-build>1.0.2</amplafi-json-build>
         <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
         <ant-build>1.8.2</ant-build>
-        <apache-httpcomponents-build>4.1.1</apache-httpcomponents-build>
+        <apache-httpcomponents-build>4.1.2</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.1.1</apache-httpcomponents-client-build>
-        <apache-mime4j-build>0.6.1</apache-mime4j-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
         <bouncycastle-build>136</bouncycastle-build>
@@ -161,6 +158,7 @@
         <commons-httpclient-build>3.1</commons-httpclient-build>
         <commons-io-build>2.0.1</commons-io-build>
         <commons-lang-build>2.6</commons-lang-build>
+        <commons-lang3-build>3.0</commons-lang3-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <commons-net-build>3.0.1</commons-net-build>
         <commons-proxy-build>1.0</commons-proxy-build>
@@ -223,8 +221,6 @@
         <!-- available at https://quickr-flickr.dev.java.net/ last checked 17 dec 2010 -->
         <quickr-build>0.8.1-SNAPSHOT</quickr-build>
         <rome-build>1.0</rome-build>
-        <selenium-build>1.0.5</selenium-build>
-        <selenium-java-client-driver-build>1.0.1</selenium-java-client-driver-build>
         <slf4j-build>1.5.8</slf4j-build>
         <spring-build>3.0.5.RELEASE</spring-build>
         <spring-security-build>3.0.5.RELEASE</spring-security-build>
@@ -285,6 +281,17 @@
             <dependency>
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
+                <version>${commons-lang-build}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang-build}</version>
                 <exclusions>
                     <exclusion>
@@ -604,46 +611,6 @@
                 <version>${easymock-class-build}</version>
                 <scope>test</scope>
             </dependency>
-            <!-- I don't think any opensource code is using selenium
-            <dependency>
-                <groupId>org.openqa.selenium.client-drivers</groupId>
-                <artifactId>selenium-java-client-driver</artifactId>
-                <version>${selenium-java-client-driver-build}</version>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>ant</groupId>
-                        <artifactId>ant</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>junit</groupId>
-                        <artifactId>junit</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.openqa.selenium.server</groupId>
-                <artifactId>selenium-server</artifactId>
-                <version>${selenium-server-build}</version>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>ant</groupId>
-                        <artifactId>ant</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>junit</groupId>
-                        <artifactId>junit</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>bouncycastle</groupId>
-                <artifactId>bcprov-jdk15</artifactId>
-                <version>${bouncycastle-build}</version>
-            </dependency>
-             -->
-
             <dependency>
                 <groupId>xmlunit</groupId>
                 <artifactId>xmlunit</artifactId>
