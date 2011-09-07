@@ -219,7 +219,6 @@
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
-        <quartz-build>1.8.4</quartz-build>
         <!-- available at https://quickr-flickr.dev.java.net/ last checked 17 dec 2010 -->
         <quickr-build>0.8.1-SNAPSHOT</quickr-build>
         <rome-build>1.0</rome-build>
@@ -1452,6 +1451,7 @@
                 <module>../jericho-html</module>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-tapestry4-stacktraces</module>
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
@@ -1471,6 +1471,7 @@
                 <module>../jericho-html</module>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-tapestry4-stacktraces</module>
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
@@ -1489,6 +1490,7 @@
             <modules>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
+                <module>../amplafi-tapestry4-stacktraces</module>
                 <module>../amplafi-hivemind</module>
             </modules>
         </profile>        
