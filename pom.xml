@@ -228,7 +228,7 @@
         <tapestry-test-build>4.1.4</tapestry-test-build>
         <tapestry5-build>5.2.4</tapestry5-build>
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
-        <testng-build>6.0.1</testng-build>
+        <testng-build>6.2.1</testng-build>
         <tomcat-build>5.5.31</tomcat-build>
         <xom-build>1.1</xom-build>
     </properties>
@@ -1449,7 +1449,7 @@
                 <module>../jericho-html</module>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
-                <module>../amplafi-tapestry4-stacktraces</module>
+                <module>../amplafi-tapestry4-utils</module>
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
@@ -1469,7 +1469,7 @@
                 <module>../jericho-html</module>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
-                <module>../amplafi-tapestry4-stacktraces</module>
+                <module>../amplafi-tapestry4-utils</module>
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
@@ -1488,7 +1488,7 @@
             <modules>
                 <module>../amplafi-tapestry4-springsecurity</module>
                 <module>../amplafi-tapestry4-test</module>
-                <module>../amplafi-tapestry4-stacktraces</module>
+                <module>../amplafi-tapestry4-utils</module>
                 <module>../amplafi-hivemind</module>
             </modules>
         </profile>        
