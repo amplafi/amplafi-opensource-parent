@@ -109,6 +109,8 @@
         <maven-eclipse-plugin-build>2.8</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.8</maven-javadoc-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
+        <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
+        <maven-release-plugin-build>2.2.1</maven-release-plugin-build>
         <jxr-build>2.2</jxr-build>
         <maven-tomcat-plugin-build>1.0-beta-1</maven-tomcat-plugin-build>
         <buildnumber-maven-plugin-build>1.0</buildnumber-maven-plugin-build>
@@ -122,7 +124,8 @@
         <pmd-plugin-build>2.5</pmd-plugin-build>        
         <maven-surefire-plugin-build>2.8</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.8</maven-surefire-report-plugin-build>
-        
+        <maven-deploy-plugin-build>2.7</maven-deploy-plugin-build>
+        <maven-jar-plugin-build>2.3.2</maven-jar-plugin-build>
         <wagon-build>1.0-beta-7</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
@@ -701,11 +704,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>${maven-source-plugin-build}</version>
                 <inherited>true</inherited>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven-javadoc-plugin-build}</version>
                 <inherited>true</inherited>
             </plugin>
         </plugins>
@@ -768,6 +773,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin-build}</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -785,6 +791,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
+                    <version>${maven-deploy-plugin-build}</version>
                     <inherited>true</inherited>
                     <configuration>
                         <uniqueVersion>false</uniqueVersion>
@@ -801,10 +808,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven-clean-plugin-build}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
+                    <version>${maven-release-plugin-build}</version>
                     <configuration>
                         <tagBase>${svn-base}/${project.artifactId}/tags/</tagBase>
                     </configuration>
