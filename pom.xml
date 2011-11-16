@@ -152,16 +152,16 @@
         <commons-digester-build>1.8.1</commons-digester-build>
         <commons-email-build>1.2</commons-email-build>
         <commons-httpclient-build>3.1</commons-httpclient-build>
-        <commons-io-build>2.0.1</commons-io-build>
+        <commons-io-build>2.1</commons-io-build>
         <commons-lang-build>2.6</commons-lang-build>
-        <commons-lang3-build>3.0.1</commons-lang3-build>
+        <commons-lang3-build>3.1</commons-lang3-build>
         <commons-logging-build>1.1.1</commons-logging-build>
         <commons-net-build>3.0.1</commons-net-build>
         <commons-proxy-build>1.0</commons-proxy-build>
 
         <dom4j-build>1.6.1</dom4j-build>
-        <easymock-build>3.0</easymock-build>
-        <easymock-class-build>3.0</easymock-class-build>
+        <easymock-build>3.1</easymock-build>
+        <easymock-class-build>3.1</easymock-class-build>
         <google-guava-build>10.0.1</google-guava-build>
         <findbugs-build>1.3.9</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs
@@ -199,7 +199,7 @@
         <amplafi-jericho-htmlparser-build>3.2.a4</amplafi-jericho-htmlparser-build>
         <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
-        <junit-build>4.8.2</junit-build>
+        <junit-build>4.10</junit-build>
         <liquibase-build>1.9.5</liquibase-build>
         <log4j-build>1.2.16</log4j-build>
         <mysql-connector-java-build>5.1.17</mysql-connector-java-build>
@@ -520,7 +520,6 @@
                 <artifactId>jdom</artifactId>
                 <version>${jdom-build}</version>
                 <exclusions>
-                    <!-- 1.1.2 refers to unreleased jaxen 1.1.3 -->
                     <exclusion>
                         <groupId>jaxen</groupId>
                         <artifactId>jaxen</artifactId>
@@ -531,6 +530,26 @@
                     </exclusion>
                 </exclusions>                
             </dependency>
+            <dependency>
+                <groupId>jaxen</groupId>
+                <artifactId>jaxen</artifactId>
+                <version>${jaxen-build}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>xml-apis</groupId>
+                        <artifactId>xml-apis</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>xerces</groupId>
+                        <artifactId>xercesImpl</artifactId>
+                    </exclusion>
+                    <!-- jdom moved to org.jdom groupId -->
+                    <exclusion>
+                        <groupId>jdom</groupId>
+                        <artifactId>jdom</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>            
             <!-- BEGIN jmx -->
             <dependency>
                 <groupId>hivemind</groupId>
