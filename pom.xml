@@ -109,7 +109,7 @@
         <maven-javadoc-plugin-build>2.8</maven-javadoc-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
         <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
-        <maven-release-plugin-build>2.2.1</maven-release-plugin-build>
+        <maven-release-plugin-build>2.2.2</maven-release-plugin-build>
         <jxr-build>2.2</jxr-build>
         <maven-tomcat-plugin-build>1.0-beta-1</maven-tomcat-plugin-build>
         <buildnumber-maven-plugin-build>1.0</buildnumber-maven-plugin-build>
@@ -146,23 +146,23 @@
         <c3p0-build>0.9.1.2</c3p0-build>
         <com-amplafi-build>0.9-SNAPSHOT</com-amplafi-build>
         <commons-beanutils-build>1.8.3</commons-beanutils-build>
-        <commons-codec-build>1.5</commons-codec-build>
+        <commons-codec-build>1.6</commons-codec-build>
         <commons-collections-build>3.2.1</commons-collections-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <commons-email-build>1.2</commons-email-build>
         <commons-httpclient-build>3.1</commons-httpclient-build>
-        <commons-io-build>2.1</commons-io-build>
+        <commons-io-build>2.3</commons-io-build>
         <commons-lang-build>2.6</commons-lang-build>
         <commons-lang3-build>3.1</commons-lang3-build>
         <commons-logging-build>1.1.1</commons-logging-build>
-        <commons-net-build>3.0.1</commons-net-build>
+        <commons-net-build>3.1</commons-net-build>
         <commons-proxy-build>1.0</commons-proxy-build>
 
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
         <easymock-class-build>3.1</easymock-class-build>
-        <google-guava-build>10.0.1</google-guava-build>
-        <findbugs-build>1.3.9</findbugs-build>
+        <google-guava-build>12.0-rc2</google-guava-build>
+        <findbugs-build>2.0.0</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
@@ -215,10 +215,10 @@
         <tapestry-test-build>4.1.4</tapestry-test-build>
         <tapestry5-build>5.3.0</tapestry5-build>
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
-        <testng-build>6.3</testng-build>
+        <testng-build>6.5.2</testng-build>
         <tomcat-build>5.5.31</tomcat-build>
         <xom-build>1.1</xom-build>
-        <jersey-build>1.11</jersey-build>
+        <jersey-build>1.13-b01</jersey-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -279,7 +279,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang-build}</version>
+                <version>${commons-lang3-build}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>junit</groupId>
@@ -667,7 +667,7 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.8-beta3</version>
+                <version>3.8</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
