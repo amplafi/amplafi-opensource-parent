@@ -195,7 +195,9 @@
         <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
         <junit-build>4.10</junit-build>
-        <liquibase-build>1.9.5</liquibase-build>
+        <liquibase-build>2.0.4</liquibase-build>
+        <liquibase-hibernate-build>2.0.4-amplafi-SNAPSHOT</liquibase-hibernate-build>
+        
         <log4j-build>1.2.16</log4j-build>
         <mysql-connector-java-build>5.1.18</mysql-connector-java-build>
         <oauth-build>20090531</oauth-build>
