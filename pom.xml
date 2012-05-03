@@ -199,7 +199,7 @@
         <liquibase-hibernate-build>2.0.4-amplafi-SNAPSHOT</liquibase-hibernate-build>
         
         <log4j-build>1.2.16</log4j-build>
-        <mysql-connector-java-build>5.1.18</mysql-connector-java-build>
+        <mysql-connector-java-build>5.1.20</mysql-connector-java-build>
         <oauth-build>20090531</oauth-build>
         <oauth-client-build>20090617</oauth-client-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
