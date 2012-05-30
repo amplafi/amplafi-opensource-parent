@@ -105,7 +105,7 @@
         <maven-compiler-plugin-build>2.3.2</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
         <maven-dependency-plugin-build>2.3</maven-dependency-plugin-build>
-        <maven-eclipse-plugin-build>2.8</maven-eclipse-plugin-build>
+        <maven-eclipse-plugin-build>2.9</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.8</maven-javadoc-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
         <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
@@ -820,6 +820,14 @@
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>${maven-eclipse-plugin-build}</version>
                     <configuration>
+	                    <additionalProjectnatures>
+						   <projectnature>org.eclipse.m2e.core.maven2Nature</projectnature>
+						</additionalProjectnatures>
+						<additionalBuildcommands>
+				            <buildCommand>
+				                <name>org.eclipse.m2e.core.maven2Builder</name>
+				            </buildCommand>
+						</additionalBuildcommands>
                         <!-- <workspaceCodeStylesURL></workspaceCodeStylesURL> -->
                         <buildOutputDirectory>bin</buildOutputDirectory>
 
