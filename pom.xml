@@ -134,9 +134,9 @@
         <amplafi-tapestry4-test-build>1.0.2</amplafi-tapestry4-test-build>
         <amplafi-json-build>1.0.2</amplafi-json-build>
         <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
-        <ant-build>1.8.3</ant-build>
-        <apache-httpcomponents-build>4.2-beta1</apache-httpcomponents-build>
-        <apache-httpcomponents-client-build>4.2-beta1</apache-httpcomponents-client-build>
+        <ant-build>1.8.4</ant-build>
+        <apache-httpcomponents-build>4.2</apache-httpcomponents-build>
+        <apache-httpcomponents-client-build>4.2</apache-httpcomponents-client-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
         <bouncycastle-build>136</bouncycastle-build>
@@ -157,7 +157,7 @@
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
         <easymock-class-build>3.1</easymock-class-build>
-        <google-guava-build>12.0-rc2</google-guava-build>
+        <google-guava-build>12.0</google-guava-build>
         <findbugs-build>2.0.0</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
@@ -187,7 +187,7 @@
         <java-build>1.7</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
         <javax-mail-build>1.4.4</javax-mail-build>
-        <javax-servlet-api-build>2.5</javax-servlet-api-build>
+        <javax-servlet-api-build>3.0-alpha-1</javax-servlet-api-build>
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.1.2</jdom-build>
         <amplafi-jericho-htmlparser-build>3.2.a4</amplafi-jericho-htmlparser-build>
