@@ -111,7 +111,7 @@
         <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
         <maven-release-plugin-build>2.2.2</maven-release-plugin-build>
         <jxr-build>2.2</jxr-build>
-        <maven-tomcat-plugin-build>1.0-beta-1</maven-tomcat-plugin-build>
+        <maven-tomcat-plugin-build>2.0-beta-1</maven-tomcat-plugin-build>
         <buildnumber-maven-plugin-build>1.0</buildnumber-maven-plugin-build>
         <properties-maven-plugin-build>1.0-alpha-2</properties-maven-plugin-build>
         <maven-project-info-reports-plugin-build>2.3.1</maven-project-info-reports-plugin-build>
@@ -125,7 +125,7 @@
         <maven-surefire-report-plugin-build>2.8</maven-surefire-report-plugin-build>
         <maven-deploy-plugin-build>2.7</maven-deploy-plugin-build>
         <maven-jar-plugin-build>2.3.2</maven-jar-plugin-build>
-        <wagon-build>1.0-beta-7</wagon-build>
+        <wagon-build>2.2</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
