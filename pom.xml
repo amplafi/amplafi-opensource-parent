@@ -179,7 +179,6 @@
         <google-gdata-spreadsheet-build>3.0</google-gdata-spreadsheet-build>
         <google-gdata-webmastertools-build>2.0</google-gdata-webmastertools-build>
         <google-gdata-youtube-build>2.0</google-gdata-youtube-build>
-        <hibernate-build>3.5.0-amplafi-SNAPSHOT</hibernate-build>
         <hivemind-build>1.1.1</hivemind-build>
         <amplafi-htmlcleaner-build>2.2.3a</amplafi-htmlcleaner-build>
         <james-mailet-build>3.0</james-mailet-build>
@@ -190,7 +189,6 @@
         <jaxen-build>1.1.1</jaxen-build>
         <jdom-build>1.1.2</jdom-build>
         <amplafi-jericho-htmlparser-build>3.2.a4</amplafi-jericho-htmlparser-build>
-        <jetty-build>6.1.26</jetty-build>
         <json-lib-build>2.2.3</json-lib-build>
         <junit-build>4.10</junit-build>
         <liquibase-build>2.0.4</liquibase-build>
@@ -198,8 +196,6 @@
         
         <log4j-build>1.2.16</log4j-build>
         <mysql-connector-java-build>5.1.20</mysql-connector-java-build>
-        <oauth-build>20090531</oauth-build>
-        <oauth-client-build>20090617</oauth-client-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
