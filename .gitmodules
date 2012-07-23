@@ -1,3 +1,27 @@
 [submodule "amplafi-json"]
 	path = amplafi-json
 	url = git://github.com/amplafi/amplafi-json.git
+[submodule "amplafi-flow-core"]
+	path = amplafi-flow-core
+	url = git://github.com/amplafi/amplafi-flow-core.git
+[submodule "amplafi-flow-client"]
+	path = amplafi-flow-client
+	url = git://github.com/amplafi/amplafi-flow-client.git
+[submodule "amplafi-hivemind"]
+	path = amplafi-hivemind
+	url = git://github.com/amplafi/amplafi-hivemind.git
+[submodule "amplafi-sworddance"]
+	path = amplafi-sworddance
+	url = git://github.com/amplafi/amplafi-sworddance.git
+[submodule "amplafi-flow-tapestry4"]
+	path = amplafi-flow-tapestry4
+	url = git://github.com/amplafi/amplafi-flow-tapestry4.git
+[submodule "amplafi-tapestry4-test"]
+	path = amplafi-tapestry4-test
+	url = git://github.com/amplafi/amplafi-tapestry4-test.git
+[submodule "amplafi-tapestry4-utils"]
+	path = amplafi-tapestry4-utils
+	url = git://github.com/amplafi/amplafi-tapestry4-utils.git
+[submodule "amplafi-tapestry4-springsecurity"]
+	path = amplafi-tapestry4-springsecurity
+	url = git://github.com/amplafi/amplafi-tapestry4-springsecurity.git
