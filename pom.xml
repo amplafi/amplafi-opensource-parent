@@ -1313,15 +1313,15 @@
                 <defaultGoal>install</defaultGoal>
             </build>
             <modules>
-                <module>../amplafi-tapestry4-springsecurity</module>
-                <module>../amplafi-tapestry4-test</module>
-                <module>../amplafi-tapestry4-utils</module>
-                <module>../amplafi-hivemind</module>
-                <module>../amplafi-sworddance</module>
-                <module>../amplafi-json</module>
-                <module>../amplafi-flow-client</module>
-                <module>../amplafi-flow-core</module>
-                <module>../amplafi-flow-tapestry4</module>
+                <module>amplafi-tapestry4-springsecurity</module>
+                <module>amplafi-tapestry4-test</module>
+                <module>amplafi-tapestry4-utils</module>
+                <module>amplafi-hivemind</module>
+                <module>amplafi-sworddance</module>
+                <module>amplafi-json</module>
+                <module>amplafi-flow-client</module>
+                <module>amplafi-flow-core</module>
+                <module>amplafi-flow-tapestry4</module>
             </modules>
         </profile>
         <profile>
