@@ -1,0 +1,3 @@
+[submodule "amplafi-json"]
+	path = amplafi-json
+	url = git://github.com/amplafi/amplafi-json.git
