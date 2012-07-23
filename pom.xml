@@ -203,7 +203,8 @@
         <spring-build>3.0.6.RELEASE</spring-build>
         <spring-security-build>3.0.7.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
-        <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
+        <!-- snapshot 4.1.7 saved as our own 4.1.7.1 so we don't keep downloading an unchanging snapshot that keeps getting repushed -->
+        <tapestry4-build>4.1.7.1</tapestry4-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
         <testng-build>6.7</testng-build>
