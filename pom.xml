@@ -129,7 +129,7 @@
         <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <amplafi-tapestry4-springsecurity-build>1.0</amplafi-tapestry4-springsecurity-build>
-        <amplafi-hivemind-build>1.0</amplafi-hivemind-build>
+        <amplafi-hivemind-build>1.0.1</amplafi-hivemind-build>
         <amplafi-tapestry4-test-build>1.0.2</amplafi-tapestry4-test-build>
         <amplafi-json-build>1.0.4</amplafi-json-build>
         <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
@@ -209,7 +209,6 @@
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
         <testng-build>6.7</testng-build>
         <xom-build>1.1</xom-build>
-        <jersey-build>1.13</jersey-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -585,71 +584,7 @@
                 <version>${apache-httpcomponents-client-build}</version>
             </dependency>
             <!-- END Apache httpcomponents -->
-            <!-- BEGIN for SOA code -->
-            <!-- Note: more interesting code at: http://mvnrepository.com/artifact/com.sun.jersey and http://mvnrepository.com/artifact/com.sun.jersey.contribs -->
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-core</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-json</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-grizzly2</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-http</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-inmemory</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-external</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <!-- Sounds interesting -->
-                <groupId>com.sun.jersey.contribs</groupId>
-                <artifactId>jersey-non-blocking-client</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-client</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.contribs</groupId>
-                <artifactId>jersey-multipart</artifactId>
-                <version>${jersey-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jvnet</groupId>
-                        <artifactId>mimepull</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <!-- http://mimepull.java.net : part of the glassfish project. Used to handle large mime messages -->
-                <groupId>org.jvnet.mimepull</groupId>
-                <artifactId>mimepull</artifactId>
-                <version>1.8</version>
-            </dependency>
-            <!-- END for SOA code -->
+
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
