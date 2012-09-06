@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.amplafi</groupId>
     <artifactId>amplafi-opensource-parent</artifactId>
-    <version>0.9.3-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Amplafi Parent</name>
     <description>Amplafi parent module</description>
     <inceptionYear>2006</inceptionYear>
@@ -28,7 +28,7 @@
             <id>patmoore</id>
             <name>Patrick Moore</name>
             <email>patmoore@amplafi.com</email>
-            <url>http://www.sworddance.com/</url>
+            <url>http://sworddance.com/</url>
             <organization>Amplafi</organization>
             <organizationUrl>http://amplafi.com/</organizationUrl>
             <roles>
@@ -126,13 +126,13 @@
         <maven-jar-plugin-build>2.3.2</maven-jar-plugin-build>
         <wagon-build>2.2</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
+        <amplafi-flow-build>0.9.4-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
-        <amplafi-tapestry4-springsecurity-build>1.0</amplafi-tapestry4-springsecurity-build>
-        <amplafi-hivemind-build>1.0.1</amplafi-hivemind-build>
-        <amplafi-tapestry4-test-build>1.0.2</amplafi-tapestry4-test-build>
-        <amplafi-json-build>1.0.4</amplafi-json-build>
-        <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
+        <amplafi-tapestry4-springsecurity-build>1.0.1</amplafi-tapestry4-springsecurity-build>
+        <amplafi-hivemind-build>1.0.2</amplafi-hivemind-build>
+        <amplafi-tapestry4-test-build>1.0.3</amplafi-tapestry4-test-build>
+        <amplafi-json-build>1.0.5</amplafi-json-build>
+        <amplafi-sworddance-build>1.0.0</amplafi-sworddance-build>
         <ant-build>1.8.4</ant-build>
         <apache-httpcomponents-build>4.2.1</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.2.1</apache-httpcomponents-client-build>
@@ -155,8 +155,8 @@
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
         <easymock-class-build>3.1</easymock-class-build>
-        <google-guava-build>13.0-rc1</google-guava-build>
-        <findbugs-build>2.0.0</findbugs-build>
+        <google-guava-build>13.0.1</google-guava-build>
+        <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
@@ -194,7 +194,7 @@
         <liquibase-hibernate-build>2.0.4-amplafi-SNAPSHOT</liquibase-hibernate-build>
         
         <log4j-build>1.2.16</log4j-build>
-        <mysql-connector-java-build>5.1.20</mysql-connector-java-build>
+        <mysql-connector-java-build>5.1.21</mysql-connector-java-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
