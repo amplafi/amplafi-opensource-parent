@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.amplafi</groupId>
     <artifactId>amplafi-opensource-parent</artifactId>
-    <version>0.9.3-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>Amplafi Parent</name>
     <description>Amplafi parent module</description>
     <inceptionYear>2006</inceptionYear>
@@ -28,7 +28,7 @@
             <id>patmoore</id>
             <name>Patrick Moore</name>
             <email>patmoore@amplafi.com</email>
-            <url>http://www.sworddance.com/</url>
+            <url>http://sworddance.com/</url>
             <organization>Amplafi</organization>
             <organizationUrl>http://amplafi.com/</organizationUrl>
             <roles>
@@ -101,48 +101,47 @@
         <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
 
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
-        <maven-checkstyle-plugin-build>2.6</maven-checkstyle-plugin-build>
+        <maven-checkstyle-plugin-build>2.9.1</maven-checkstyle-plugin-build>
         <maven-compiler-plugin-build>2.5.1</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
-        <maven-dependency-plugin-build>2.4</maven-dependency-plugin-build>
+        <maven-dependency-plugin-build>2.5.1</maven-dependency-plugin-build>
         <maven-eclipse-plugin-build>2.9</maven-eclipse-plugin-build>
-        <maven-javadoc-plugin-build>2.8</maven-javadoc-plugin-build>
+        <maven-javadoc-plugin-build>2.9</maven-javadoc-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
-        <maven-clean-plugin-build>2.4.1</maven-clean-plugin-build>
-        <maven-release-plugin-build>2.2.2</maven-release-plugin-build>
-        <jxr-build>2.2</jxr-build>
-        <maven-tomcat-plugin-build>2.0-beta-1</maven-tomcat-plugin-build>
-        <buildnumber-maven-plugin-build>1.0</buildnumber-maven-plugin-build>
+        <maven-clean-plugin-build>2.5</maven-clean-plugin-build>
+        <maven-release-plugin-build>2.3.2</maven-release-plugin-build>
+        <jxr-build>2.3</jxr-build>
+        <maven-tomcat-plugin-build>2.0</maven-tomcat-plugin-build>
+        <buildnumber-maven-plugin-build>1.1</buildnumber-maven-plugin-build>
         <properties-maven-plugin-build>1.0-alpha-2</properties-maven-plugin-build>
-        <maven-project-info-reports-plugin-build>2.3.1</maven-project-info-reports-plugin-build>
-        <maven-repository-plugin-build>2.3</maven-repository-plugin-build>
-        <maven-resources-plugin-build>2.4.3</maven-resources-plugin-build>
-        <maven-source-plugin-build>2.1.2</maven-source-plugin-build>
+        <maven-project-info-reports-plugin-build>2.5.1</maven-project-info-reports-plugin-build>
+        <maven-repository-plugin-build>2.3.1</maven-repository-plugin-build>
+        <maven-resources-plugin-build>2.6</maven-resources-plugin-build>
+        <maven-source-plugin-build>2.2</maven-source-plugin-build>
         <maven-site-plugin-build>3.1</maven-site-plugin-build>
         <pmd-plugin-build>2.7.1</pmd-plugin-build>
-        <maven-surefire-plugin-build>2.8</maven-surefire-plugin-build>
-        <maven-surefire-report-plugin-build>2.8</maven-surefire-report-plugin-build>
+        <maven-surefire-plugin-build>2.6</maven-surefire-plugin-build>
+        <maven-surefire-report-plugin-build>2.6</maven-surefire-report-plugin-build>
         <maven-deploy-plugin-build>2.7</maven-deploy-plugin-build>
         <maven-jar-plugin-build>2.3.2</maven-jar-plugin-build>
         <wagon-build>2.2</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <amplafi-flow-build>0.9.3-SNAPSHOT</amplafi-flow-build>
+        <amplafi-flow-build>0.9.4-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
-        <amplafi-tapestry4-springsecurity-build>1.0</amplafi-tapestry4-springsecurity-build>
-        <amplafi-hivemind-build>1.0</amplafi-hivemind-build>
-        <amplafi-tapestry4-test-build>1.0.2</amplafi-tapestry4-test-build>
-        <amplafi-json-build>1.0.4</amplafi-json-build>
-        <amplafi-sworddance-build>0.9.3-SNAPSHOT</amplafi-sworddance-build>
+        <amplafi-tapestry4-springsecurity-build>1.0.1</amplafi-tapestry4-springsecurity-build>
+        <amplafi-hivemind-build>1.0.2</amplafi-hivemind-build>
+        <amplafi-tapestry4-test-build>1.0.3</amplafi-tapestry4-test-build>
+        <amplafi-json-build>1.0.5</amplafi-json-build>
+        <amplafi-sworddance-build>1.0.2</amplafi-sworddance-build>
         <ant-build>1.8.4</ant-build>
-        <apache-httpcomponents-build>4.2.1</apache-httpcomponents-build>
+        <apache-httpcomponents-build>4.2.2</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.2.1</apache-httpcomponents-client-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
-        <bouncycastle-build>136</bouncycastle-build>
         <c3p0-build>0.9.1.2</c3p0-build>
         <com-amplafi-build>0.9-SNAPSHOT</com-amplafi-build>
         <commons-beanutils-build>1.8.3</commons-beanutils-build>
-        <commons-codec-build>1.6</commons-codec-build>
+        <commons-codec-build>1.7</commons-codec-build>
         <commons-collections-build>3.2.1</commons-collections-build>
         <commons-digester-build>1.8.1</commons-digester-build>
         <commons-email-build>1.2</commons-email-build>
@@ -156,8 +155,8 @@
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
         <easymock-class-build>3.1</easymock-class-build>
-        <google-guava-build>13.0-rc1</google-guava-build>
-        <findbugs-build>2.0.0</findbugs-build>
+        <google-guava-build>13.0.1</google-guava-build>
+        <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <google-gdata-analytics-build>2.0</google-gdata-analytics-build>
@@ -194,8 +193,8 @@
         <liquibase-build>2.0.4</liquibase-build>
         <liquibase-hibernate-build>2.0.4-amplafi-SNAPSHOT</liquibase-hibernate-build>
         
-        <log4j-build>1.2.16</log4j-build>
-        <mysql-connector-java-build>5.1.20</mysql-connector-java-build>
+        <log4j-build>1.2.17</log4j-build>
+        <mysql-connector-java-build>5.1.21</mysql-connector-java-build>
         <openutils-log4j-build>2.0.5</openutils-log4j-build>
         <ognl-build>2.7.3</ognl-build>
         <oro-build>2.0.8</oro-build>
@@ -204,12 +203,12 @@
         <spring-build>3.0.6.RELEASE</spring-build>
         <spring-security-build>3.0.7.RELEASE</spring-security-build>
         <tacos4-build>4.1.2-SNAPSHOT</tacos4-build>
-        <tapestry4-build>4.1.7-SNAPSHOT</tapestry4-build>
+        <!-- snapshot 4.1.7 saved as our own 4.1.7.1 so we don't keep downloading an unchanging snapshot that keeps getting repushed -->
+        <tapestry4-build>4.1.7.1</tapestry4-build>
         <tapestry-test-build>4.1.4</tapestry-test-build>
         <!-- surefire 2.6 needs 5.12.1 (or our configuration needs to change getting classcastexception) -->
         <testng-build>6.7</testng-build>
         <xom-build>1.1</xom-build>
-        <jersey-build>1.13</jersey-build>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -585,71 +584,7 @@
                 <version>${apache-httpcomponents-client-build}</version>
             </dependency>
             <!-- END Apache httpcomponents -->
-            <!-- BEGIN for SOA code -->
-            <!-- Note: more interesting code at: http://mvnrepository.com/artifact/com.sun.jersey and http://mvnrepository.com/artifact/com.sun.jersey.contribs -->
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-core</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-json</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-grizzly2</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-http</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-inmemory</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.jersey-test-framework</groupId>
-                <artifactId>jersey-test-framework-external</artifactId>
-                <version>${jersey-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <!-- Sounds interesting -->
-                <groupId>com.sun.jersey.contribs</groupId>
-                <artifactId>jersey-non-blocking-client</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-client</artifactId>
-                <version>${jersey-build}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sun.jersey.contribs</groupId>
-                <artifactId>jersey-multipart</artifactId>
-                <version>${jersey-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jvnet</groupId>
-                        <artifactId>mimepull</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <!-- http://mimepull.java.net : part of the glassfish project. Used to handle large mime messages -->
-                <groupId>org.jvnet.mimepull</groupId>
-                <artifactId>mimepull</artifactId>
-                <version>1.8</version>
-            </dependency>
-            <!-- END for SOA code -->
+
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
