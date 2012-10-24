@@ -131,7 +131,7 @@
         <amplafi-tapestry4-springsecurity-build>1.0.1</amplafi-tapestry4-springsecurity-build>
         <amplafi-hivemind-build>1.0.2</amplafi-hivemind-build>
         <amplafi-tapestry4-test-build>1.0.3</amplafi-tapestry4-test-build>
-        <amplafi-json-build>1.0.5</amplafi-json-build>
+        <amplafi-json-build>1.0.6</amplafi-json-build>
         <amplafi-sworddance-build>1.0.2</amplafi-sworddance-build>
         <ant-build>1.8.4</ant-build>
         <apache-httpcomponents-build>4.2.2</apache-httpcomponents-build>
