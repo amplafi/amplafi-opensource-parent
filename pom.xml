@@ -213,7 +213,6 @@
     <dependencyManagement>
         <dependencies>
             <!-- google gdata libraries -->
-            <!-- google gdata libraries -->
             <!-- Note: 27 dec 2010 PAT guava not used but want to make available to explore to see if we should use google's guava. This is the complete guava. -->
             <dependency>
                 <groupId>com.google.guava</groupId>
