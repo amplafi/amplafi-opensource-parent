@@ -1243,7 +1243,7 @@
             </modules>
         </profile>
         <profile>
-            <id>amplafi-no-android</id>
+            <id>git-modules</id>
             <build>
                 <defaultGoal>install</defaultGoal>
             </build>
