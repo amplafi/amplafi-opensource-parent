@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.amplafi</groupId>
     <artifactId>amplafi-opensource-parent</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <name>Amplafi Parent</name>
     <description>Amplafi parent module</description>
     <inceptionYear>2006</inceptionYear>
@@ -132,7 +132,7 @@
         <amplafi-hivemind-build>1.0.2</amplafi-hivemind-build>
         <amplafi-tapestry4-test-build>1.0.3</amplafi-tapestry4-test-build>
         <amplafi-json-build>1.0.7</amplafi-json-build>
-        <amplafi-sworddance-build>1.0.3</amplafi-sworddance-build>
+        <amplafi-sworddance-build>1.0.4</amplafi-sworddance-build>
         <ant-build>1.8.4</ant-build>
         <apache-httpcomponents-build>4.2.2</apache-httpcomponents-build>
         <apache-httpcomponents-client-build>4.2.2</apache-httpcomponents-client-build>
