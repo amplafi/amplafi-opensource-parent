@@ -126,7 +126,7 @@
         <maven-jar-plugin-build>2.4</maven-jar-plugin-build>
         <wagon-build>2.2</wagon-build>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <amplafi-tools-build>0.0.1-SNAPSHOT</amplafi-tools-build>
+        <amplafi-tools-build>0.0.1</amplafi-tools-build>
         <amplafi-flow-build>0.9.4-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <amplafi-tapestry4-springsecurity-build>1.0.1</amplafi-tapestry4-springsecurity-build>
