@@ -161,7 +161,7 @@
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <hivemind-build>1.1.1</hivemind-build>
-        <amplafi-htmlcleaner-build>2.2.3.1</amplafi-htmlcleaner-build>
+        <amplafi-htmlcleaner-build>2.2.3.2</amplafi-htmlcleaner-build>
         <james-mailet-build>3.0</james-mailet-build>
         <java-build>1.7</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
