@@ -900,29 +900,6 @@
                         </execution>
                     </executions>
                 </plugin>
-                <!-- site plugin is broken. And since I see no real value for site plugin at this moment. because of [exec] urls[0] = file:/Users/patmoore/masterprojects/amplafi-tools/apache-maven-2.2.1/lib/maven-2.2.1-uber.jar [exec] Invalid class loader hierarchy. You have more than one version of 
-                    'org.apache.commons.logging.Log' visible, which is not allowed. [exec] [INFO] Trace [exec] java.lang.ExceptionInInitializerError [exec] at org.apache.maven.plugin.javadoc.JavadocUtil.fetchURL(JavadocUtil.java:730) [exec] at org.apache.maven.plugin.javadoc.AbstractJavadocMojo.isValidJavadocLink(AbstractJavadocMojo.java:4680) 
-                    [exec] at org.apache.maven.plugin.javadoc.AbstractJavadocMojo.addLinkArguments(AbstractJavadocMojo.java:3229) [exec] at org.apache.maven.plugin.javadoc.AbstractJavadocMojo.addStandardDocletOptions(AbstractJavadocMojo.java:3885) [exec] at org.apache.maven.plugin.javadoc.AbstractJavadocMojo.executeReport(AbstractJavadocMojo.java:1761) 
-                    [exec] at org.apache.maven.plugin.javadoc.JavadocReport.generate(JavadocReport.java:122) [exec] at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:164) [exec] at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:330) 
-                    [exec] at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:134) [exec] at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:158) [exec] at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:120) [exec] at org.apache.maven.plugins.site.SiteJarMojo.execute(SiteJarMojo.java:82) 
-                    [exec] at org.apache.maven.plugin.DefaultPluginManager.executeMojo(DefaultPluginManager.java:490) [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoals(DefaultLifecycleExecutor.java:694) [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalWithLifecycle(DefaultLifecycleExecutor.java:556) 
-                    [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoal(DefaultLifecycleExecutor.java:535) [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalAndHandleFailures(DefaultLifecycleExecutor.java:387) [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeTaskSegments(DefaultLifecycleExecutor.java:348) 
-                    [exec] at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:180) [exec] at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:328) [exec] at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:138) [exec] at org.apache.maven.cli.MavenCli.main(MavenCli.java:362) 
-                    [exec] at org.apache.maven.cli.compat.CompatibleMain.main(CompatibleMain.java:60) [exec] at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [exec] at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [exec] at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) 
-                    [exec] at java.lang.reflect.Method.invoke(Method.java:597) [exec] at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315) [exec] at org.codehaus.classworlds.Launcher.launch(Launcher.java:255) [exec] at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430) [exec] at org.codehaus.classworlds.Launcher.main(Launcher.java:375) 
-                    [exec] Caused by: org.apache.commons.logging.LogConfigurationException: org.apache.commons.logging.LogConfigurationException: org.apache.commons.logging.LogConfigurationException: Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, which is not 
-                    allowed. (Caused by org.apache.commons.logging.LogConfigurationException: Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, which is not allowed.) (Caused by org.apache.commons.logging.LogConfigurationException: org.apache.commons.logging.LogConfigurationException: 
-                    Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, which is not allowed. (Caused by org.apache.commons.logging.LogConfigurationException: Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, 
-                    which is not allowed.)) [exec] at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:543) [exec] at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:235) [exec] at org.apache.commons.logging.impl.LogFactoryImpl.getInstance(LogFactoryImpl.java:209) 
-                    [exec] at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:351) [exec] at org.apache.commons.httpclient.HttpClient.<clinit>(HttpClient.java:66) [exec] ... 31 more [exec] Caused by: org.apache.commons.logging.LogConfigurationException: org.apache.commons.logging.LogConfigurationException: 
-                    Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, which is not allowed. (Caused by org.apache.commons.logging.LogConfigurationException: Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, 
-                    which is not allowed.) [exec] at org.apache.commons.logging.impl.LogFactoryImpl.getLogConstructor(LogFactoryImpl.java:397) [exec] at org.apache.commons.logging.impl.LogFactoryImpl.newInstance(LogFactoryImpl.java:529) [exec] ... 35 more [exec] Caused by: org.apache.commons.logging.LogConfigurationException: 
-                    Invalid class loader hierarchy. You have more than one version of 'org.apache.commons.logging.Log' visible, which is not allowed. [exec] at org.apache.commons.logging.impl.LogFactoryImpl.getLogConstructor(LogFactoryImpl.java:385) [exec] ... 36 more <plugin> <groupId>org.apache.maven.plugins</groupId> 
-                    <artifactId>maven-site-plugin</artifactId> <version>${maven-site-plugin-build}</version> <dependencies> <dependency> <groupId>commons-logging</groupId> <artifactId>commons-logging</artifactId> <version>${commons-logging-build}</version> <exclusions> <exclusion> <groupId>avalon-framework</groupId> <artifactId>avalon-framework</artifactId> 
-                    </exclusion> <exclusion> <groupId>javax.servlet</groupId> <artifactId>servlet-api</artifactId> </exclusion> <exclusion> <groupId>logkit</groupId> <artifactId>logkit</artifactId> </exclusion> <exclusion> <groupId>log4j</groupId> <artifactId>log4j</artifactId> </exclusion> <exclusion> <groupId>junit</groupId> 
-                    <artifactId>junit</artifactId> </exclusion> </exclusions> </dependency> <dependency> <groupId>commons-collections</groupId> <artifactId>commons-collections</artifactId> <version>${commons-collections-build}</version> <exclusions> <exclusion> <groupId>junit</groupId> <artifactId>junit</artifactId> </exclusion> 
-                    </exclusions> </dependency> </dependencies> <executions> <execution> <phase>package</phase> <goals> <goal>jar</goal> </goals> <configuration> <siteDirectory>${project.artifactId}/src/site</siteDirectory> <attach>true</attach> </configuration> </execution> !- 11 feb 2009: (PAT) Is this necessary? <execution> 
-                    <phase>deploy</phase> <goals> <goal>attach-descriptor</goal> </goals> <configuration> <attach>true</attach> </configuration> </execution> - end comment out </executions> </plugin> -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
@@ -942,7 +919,7 @@
                             </goals>
                             <configuration>
                                 <files>
-                                    <file>../amplafi-common/pom.properties</file>
+                                    <file>../amplafi-opensource-parent/pom.properties</file>
                                 </files>
                             </configuration>
                         </execution>
@@ -954,7 +931,7 @@
                             </goals>
                             <configuration>
                                 <files>
-                                    <file>../amplafi-common/pom.properties</file>
+                                    <file>../amplafi-opensource-parent/pom.properties</file>
                                 </files>
                             </configuration>
                         </execution>
