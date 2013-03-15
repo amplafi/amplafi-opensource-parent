@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.amplafi</groupId>
     <artifactId>amplafi-opensource-parent</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <name>Amplafi Parent</name>
     <description>Amplafi parent module</description>
     <inceptionYear>2006</inceptionYear>
@@ -101,15 +101,15 @@
         <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
 
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
-        <maven-checkstyle-plugin-build>2.9.1</maven-checkstyle-plugin-build>
+        <maven-checkstyle-plugin-build>2.10</maven-checkstyle-plugin-build>
         <maven-compiler-plugin-build>2.5.1</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
-        <maven-dependency-plugin-build>2.5.1</maven-dependency-plugin-build>
+        <maven-dependency-plugin-build>2.7</maven-dependency-plugin-build>
         <maven-eclipse-plugin-build>2.9</maven-eclipse-plugin-build>
         <maven-javadoc-plugin-build>2.9</maven-javadoc-plugin-build>
         <maven-jetty-plugin-build>6.1.21</maven-jetty-plugin-build>
         <maven-clean-plugin-build>2.5</maven-clean-plugin-build>
-        <maven-release-plugin-build>2.3.2</maven-release-plugin-build>
+        <maven-release-plugin-build>2.4</maven-release-plugin-build>
         <jxr-build>2.3</jxr-build>
         <maven-tomcat-plugin-build>2.0</maven-tomcat-plugin-build>
         <buildnumber-maven-plugin-build>1.2</buildnumber-maven-plugin-build>
@@ -119,8 +119,8 @@
         <maven-resources-plugin-build>2.6</maven-resources-plugin-build>
         <maven-source-plugin-build>2.2.1</maven-source-plugin-build>
         <maven-site-plugin-build>3.1</maven-site-plugin-build>
-        <pmd-plugin-build>2.7.1</pmd-plugin-build>
-        <maven-surefire-plugin-build>2.6</maven-surefire-plugin-build>
+        <pmd-plugin-build>3.0.1</pmd-plugin-build>
+        <maven-surefire-plugin-build>2.14</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.6</maven-surefire-report-plugin-build>
         <maven-deploy-plugin-build>2.7</maven-deploy-plugin-build>
         <maven-jar-plugin-build>2.4</maven-jar-plugin-build>
@@ -133,10 +133,10 @@
         <amplafi-hivemind-build>1.0.2</amplafi-hivemind-build>
         <amplafi-tapestry4-test-build>1.0.3</amplafi-tapestry4-test-build>
         <amplafi-json-build>1.0.8</amplafi-json-build>
-        <amplafi-sworddance-build>1.0.5</amplafi-sworddance-build>
-        <ant-build>1.8.4</ant-build>
-        <apache-httpcomponents-build>4.2.2</apache-httpcomponents-build>
-        <apache-httpcomponents-client-build>4.2.2</apache-httpcomponents-client-build>
+        <amplafi-sworddance-build>1.0.6</amplafi-sworddance-build>
+        <ant-build>1.9.0</ant-build>
+        <apache-httpcomponents-build>4.3-alpha1</apache-httpcomponents-build>
+        <apache-httpcomponents-client-build>4.3-alpha1</apache-httpcomponents-client-build>
         <apache-ws-commons-util-build>1.0.2</apache-ws-commons-util-build>
         <apache-xmlrpc-build>3.1.3</apache-xmlrpc-build>
         <c3p0-build>0.9.1.2</c3p0-build>
@@ -150,13 +150,13 @@
         <commons-lang-build>2.6</commons-lang-build>
         <commons-lang3-build>3.1</commons-lang3-build>
         <commons-logging-build>1.1.1</commons-logging-build>
-        <commons-net-build>3.1</commons-net-build>
+        <commons-net-build>3.2</commons-net-build>
         <commons-proxy-build>1.0</commons-proxy-build>
 
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
         <easymock-class-build>3.1</easymock-class-build>
-        <google-guava-build>13.0.1</google-guava-build>
+        <google-guava-build>14.0.1</google-guava-build>
         <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
@@ -166,11 +166,11 @@
         <javassist-build>3.9.0.GA</javassist-build>
         <javax-mail-build>1.4.4</javax-mail-build>
         <javax-servlet-api-build>3.0-alpha-1</javax-servlet-api-build>
-        <jaxen-build>1.1.1</jaxen-build>
-        <jdom-build>1.1.2</jdom-build>
+        <jaxen-build>1.1.4</jaxen-build>
+        <jdom-build>2.0.2</jdom-build>
         <amplafi-jericho-htmlparser-build>3.2.4</amplafi-jericho-htmlparser-build>
         <json-lib-build>2.2.3</json-lib-build>
-        <junit-build>4.11-beta-1</junit-build>
+        <junit-build>4.11</junit-build>
         <liquibase-build>2.0.4</liquibase-build>
         <liquibase-hibernate-build>2.0.4-amplafi-SNAPSHOT</liquibase-hibernate-build>
         
@@ -568,7 +568,7 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.8</version>
+                <version>3.9</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -591,7 +591,7 @@
             <dependency>
                 <groupId>xmlunit</groupId>
                 <artifactId>xmlunit</artifactId>
-                <version>1.3</version>
+                <version>1.4</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
