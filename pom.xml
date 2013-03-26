@@ -445,32 +445,6 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.apache.tapestry</groupId>
-                <artifactId>tapestry-contrib</artifactId>
-                <version>${tapestry4-build}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>jboss</groupId>
-                        <artifactId>j2ee</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.tapestry</groupId>
-                        <artifactId>tapestry-framework</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>backport-util-concurrent</groupId>
-                        <artifactId>backport-util-concurrent</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <!-- needed by tapestry code -->
-            <dependency>
-                <groupId>backport-util-concurrent</groupId>
-                <artifactId>backport-util-concurrent</artifactId>
-                <version>3.1</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency>
                 <groupId>javassist</groupId>
                 <artifactId>javassist</artifactId>
                 <version>${javassist-build}</version>
@@ -512,26 +486,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            <!-- BEGIN jmx -->
-            <dependency>
-                <groupId>hivemind</groupId>
-                <artifactId>hivemind-jmx</artifactId>
-                <version>${hivemind-build}</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency>
-                <groupId>mx4j</groupId>
-                <artifactId>mx4j</artifactId>
-                <version>3.0.2</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>mx4j</groupId>
-                <artifactId>mx4j-tools</artifactId>
-                <version>3.0.1</version>
-                <scope>provided</scope>
-            </dependency>
-            <!-- END jmx -->
             <!-- BEGIN test insertion -->
             <!-- needed for building some hibernate ant tasks -->
             <dependency>
