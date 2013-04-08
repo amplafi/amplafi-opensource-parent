@@ -162,7 +162,6 @@
         <james-mailet-build>3.0</james-mailet-build>
         <java-build>1.7</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
-        <javax-mail-build>1.4.4</javax-mail-build>
         <javax-servlet-api-build>3.0-alpha-1</javax-servlet-api-build>
         <jaxen-build>1.1.4</jaxen-build>
         <jdom-build>2.0.2</jdom-build>
