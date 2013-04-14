@@ -159,7 +159,6 @@
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <hivemind-build>1.1.1</hivemind-build>
-        <james-mailet-build>3.0</james-mailet-build>
         <java-build>1.7</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
         <javax-servlet-api-build>3.0-alpha-1</javax-servlet-api-build>
