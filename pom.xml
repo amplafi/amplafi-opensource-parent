@@ -153,7 +153,6 @@
 
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
-        <easymock-class-build>3.1</easymock-class-build>
         <google-guava-build>14.0.1</google-guava-build>
         <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
@@ -530,12 +529,6 @@
                 <groupId>org.easymock</groupId>
                 <artifactId>easymock</artifactId>
                 <version>${easymock-build}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.easymock</groupId>
-                <artifactId>easymockclassextension</artifactId>
-                <version>${easymock-class-build}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
