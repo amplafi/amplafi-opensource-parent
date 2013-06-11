@@ -101,6 +101,7 @@
         <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
 
         <maven-antrun-plugin-build>1.2</maven-antrun-plugin-build>
+        <maven-assembly-plugin-build>2.3</maven-assembly-plugin-build>
         <maven-checkstyle-plugin-build>2.10</maven-checkstyle-plugin-build>
         <maven-compiler-plugin-build>2.5.1</maven-compiler-plugin-build>
         <cobertura-maven-plugin-build>2.4</cobertura-maven-plugin-build>
@@ -154,6 +155,7 @@
 
         <dom4j-build>1.6.1</dom4j-build>
         <easymock-build>3.1</easymock-build>
+        <exec-maven-plugin-build>1.2.1</exec-maven-plugin-build>
         <google-guava-build>14.0.1</google-guava-build>
         <groovy-all-build>2.1.1</groovy-all-build>
         <findbugs-build>2.0.1</findbugs-build>
@@ -882,6 +884,16 @@
                         <!-- <format>r{0} - {1,time} {1,date}</format> <items> <item>buildNumber</item> <item>timestamp</item> </items> -->
                     </configuration>
                 </plugin>
+                
+                <plugin>
+	                <groupId>org.codehaus.mojo</groupId>
+	              	<artifactId>exec-maven-plugin</artifactId>
+	              	<version>${exec-maven-plugin-build}</version>
+              	</plugin>
+              	<plugin>
+              		<artifactId>maven-assembly-plugin</artifactId>
+              		<version>${maven-assembly-plugin-build}</version>
+              	</plugin>
             </plugins>
         </pluginManagement>
         <extensions>
