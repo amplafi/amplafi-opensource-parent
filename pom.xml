@@ -584,21 +584,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- some files seem to be available on the offical mvnrepository ( 2.0.1+ versions of springsecurity for example) -->
-        <repository>
-            <id>maven2-springsource</id>
-            <name>Repository for springsource</name>
-            <url>http://maven.springframework.org/release/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <!-- every 7 days -->
-                <updatePolicy>interval:10080</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
     </repositories>
     <build>
         <defaultGoal>install</defaultGoal>
