@@ -121,7 +121,7 @@
         <maven-source-plugin-build>2.2.1</maven-source-plugin-build>
         <maven-site-plugin-build>3.1</maven-site-plugin-build>
         <pmd-plugin-build>3.0.1</pmd-plugin-build>
-        <maven-surefire-plugin-build>2.14.1</maven-surefire-plugin-build>
+        <maven-surefire-plugin-build>2.15</maven-surefire-plugin-build>
         <maven-surefire-report-plugin-build>2.6</maven-surefire-report-plugin-build>
         <maven-deploy-plugin-build>2.7</maven-deploy-plugin-build>
         <maven-jar-plugin-build>2.4</maven-jar-plugin-build>
