@@ -157,7 +157,7 @@
         <easymock-build>3.1</easymock-build>
         <exec-maven-plugin-build>1.2.1</exec-maven-plugin-build>
         <google-guava-build>14.0.1</google-guava-build>
-        <groovy-all-build>2.1.1</groovy-all-build>
+        <groovy-all-build>1.8.6</groovy-all-build>
         <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
@@ -608,6 +608,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
                     <configuration>
                         <source>1.7</source>
                         <target>1.7</target>
