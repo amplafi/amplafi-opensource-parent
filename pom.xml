@@ -131,7 +131,7 @@
         <amplafi-flow-build>0.9.4-SNAPSHOT</amplafi-flow-build>
         <amplafi-timeline-build>1.0.0</amplafi-timeline-build>
         <amplafi-hivemind-build>1.0.3</amplafi-hivemind-build>
-        <amplafi-json-build>1.0.9</amplafi-json-build>
+        <amplafi-json-build>1.0.10</amplafi-json-build>
         <amplafi-sworddance-build>1.0.7</amplafi-sworddance-build>
         <ant-build>1.9.1</ant-build>
         <apache-httpcomponents-build>4.3-beta2</apache-httpcomponents-build>
