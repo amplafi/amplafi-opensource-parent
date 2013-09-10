@@ -157,7 +157,8 @@
         <easymock-build>3.1</easymock-build>
         <exec-maven-plugin-build>1.2.1</exec-maven-plugin-build>
         <google-guava-build>14.0.1</google-guava-build>
-        <groovy-all-build>2.1.5</groovy-all-build>
+        <!-- 10 sept 2013: groovy eclipse is using 2.0.7 so to make it easier to debug stay with the version that we can use eclipse with -->
+        <groovy-all-build>2.0.7</groovy-all-build>
         <findbugs-build>2.0.1</findbugs-build>
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
