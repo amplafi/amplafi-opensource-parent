@@ -551,6 +551,7 @@
                 <updatePolicy>interval:10080</updatePolicy>
             </snapshots>
         </repository>
+<!--
         <repository>
             <id>amplafi.public</id>
             <url>http://maven.amplafi.com/</url>
@@ -568,13 +569,13 @@
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
-                <!-- every 7 days -->
                 <updatePolicy>interval:10080</updatePolicy>
             </releases>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+-->
     </repositories>
     <build>
         <defaultGoal>install</defaultGoal>
@@ -811,6 +812,7 @@
                             </exclusions>
                         </dependency>
                     </dependencies>
+<!--
                     <executions>
                         <execution>
                             <id>attach-javadocs</id>
@@ -822,6 +824,10 @@
                             </configuration>
                         </execution>
                     </executions>
+-->
+                    <configuration>
+                        <failOnError>false</failOnError>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -905,19 +911,6 @@
     </build>
     <pluginRepositories>
         <pluginRepository>
-            <!-- default repository with enabling of checking for new releases every 5 days -->
-            <id>central</id>
-            <name>Maven Plugin Repository</name>
-            <url>http://repo1.maven.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <!-- every 7 days -->
-                <updatePolicy>interval:10080</updatePolicy>
-            </releases>
-        </pluginRepository>
-        <pluginRepository>
             <id>apache.snapshots</id>
             <url>http://repository.apache.org/snapshots/</url>
             <releases>
@@ -931,18 +924,10 @@
             </snapshots>
         </pluginRepository>
         <pluginRepository>
-            <id>codehaus</id>
-            <name>codehaus-repo</name>
-            <url>http://repository.codehaus.org/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <!-- every 7 days -->
-                <updatePolicy>interval:10080</updatePolicy>
-            </snapshots>
+            <id>codehaus-mule-repo</id>
+            <name>codehaus-mule-repo</name>
+            <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
+            <layout>default</layout>
         </pluginRepository>
         <!-- <pluginRepository> <id>amplafi-public-plugins</id> <url>http://maven.amplafi.com/</url> <releases> <enabled>true</enabled> <updatePolicy>warn</updatePolicy> </releases> <snapshots> <enabled>true</enabled> <updatePolicy>interval:2880</updatePolicy> </snapshots> </pluginRepository> -->
     </pluginRepositories>
