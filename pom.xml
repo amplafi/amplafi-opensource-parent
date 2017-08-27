@@ -96,6 +96,8 @@
         </repository>
     </distributionManagement>
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <github-base>git@github.com:amplafi/</github-base>
         <android-java-build>1.5</android-java-build>
         <liquibase-plugin-build>1.9.5.0</liquibase-plugin-build>
@@ -1109,7 +1111,7 @@
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
-                <module>../amplafi-flow-client</module>
+                <!-- <module>../amplafi-flow-client</module> -->
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-tools</module>
             </modules>
@@ -1123,7 +1125,7 @@
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
-                <module>../amplafi-flow-client</module>
+                <!-- <module>../amplafi-flow-client</module> -->
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-tools</module>
             </modules>
@@ -1138,7 +1140,7 @@
                 <module>../amplafi-hivemind</module>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
-                <module>../amplafi-flow-client</module>
+                <!-- <module>../amplafi-flow-client</module> -->
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-tools</module>
             </modules>
@@ -1170,7 +1172,7 @@
             <modules>
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
-                <module>../amplafi-flow-client</module>
+                <!-- <module>../amplafi-flow-client</module> -->
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-flow-tapestry4</module>
             </modules>
@@ -1181,7 +1183,7 @@
                 <defaultGoal>deploy</defaultGoal>
             </build>
             <modules>
-                <module>../amplafi-flow-client</module>
+                <!-- <module>../amplafi-flow-client</module> -->
                 <module>../amplafi-flow-core</module>
                 <module>../amplafi-flow-tapestry4</module>
             </modules>
