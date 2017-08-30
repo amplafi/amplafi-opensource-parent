@@ -165,7 +165,7 @@
         <!-- jsr305 seems to be coupled with findbugs <jsr305-build>1.</jsr305-build> -->
 
         <hivemind-build>1.1.1</hivemind-build>
-        <java-build>1.7</java-build>
+        <java-build>1.8</java-build>
         <javassist-build>3.9.0.GA</javassist-build>
         <javax-servlet-api-build>3.0-alpha-1</javax-servlet-api-build>
         <jaxen-build>1.1.4</jaxen-build>
@@ -605,8 +605,6 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
                     <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
                         <encoding>UTF-8</encoding>
                         <!-- for when javac crashes <compilerArgument>-verbose</compilerArgument> -->
                     </configuration>
