@@ -1105,8 +1105,8 @@
                 <defaultGoal>install</defaultGoal>
             </build>
             <modules>
-                <module>../jericho-html</module>
-                <module>../amplafi-hivemind</module>
+                <!--<module>../jericho-html</module>-->
+                <!--<module>../amplafi-hivemind</module>-->
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
                 <!-- <module>../amplafi-flow-client</module> -->
@@ -1120,7 +1120,7 @@
                 <defaultGoal>install</defaultGoal>
             </build>
             <modules>
-                <module>../amplafi-hivemind</module>
+                <!--<module>../amplafi-hivemind</module>-->
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
                 <!-- <module>../amplafi-flow-client</module> -->
@@ -1134,8 +1134,8 @@
                 <defaultGoal>install</defaultGoal>
             </build>
             <modules>
-                <module>../jericho-html</module>
-                <module>../amplafi-hivemind</module>
+                <!--<module>../jericho-html</module>-->
+                <!--<module>../amplafi-hivemind</module>-->
                 <module>../amplafi-sworddance</module>
                 <module>../amplafi-json</module>
                 <!-- <module>../amplafi-flow-client</module> -->
@@ -1143,15 +1143,15 @@
                 <module>../amplafi-tools</module>
             </modules>
         </profile>
-        <profile>
-            <id>Tapestry</id>
-            <build>
-                <defaultGoal>deploy</defaultGoal>
-            </build>
-            <modules>
-                <module>../amplafi-hivemind</module>
-            </modules>
-        </profile>
+        <!--<profile>-->
+            <!--<id>Tapestry</id>-->
+            <!--<build>-->
+                <!--<defaultGoal>deploy</defaultGoal>-->
+            <!--</build>-->
+            <!--<modules>-->
+                <!--<module>../amplafi-hivemind</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
         <profile>
             <id>Support</id>
             <build>
@@ -1186,14 +1186,14 @@
                 <module>../amplafi-flow-tapestry4</module>
             </modules>
         </profile>
-        <profile>
-            <id>Html</id>
-            <build>
-                <defaultGoal>deploy</defaultGoal>
-            </build>
-            <modules>
-                <module>../jericho-html</module>
-            </modules>
-        </profile>
+        <!--<profile>-->
+            <!--<id>Html</id>-->
+            <!--<build>-->
+                <!--<defaultGoal>deploy</defaultGoal>-->
+            <!--</build>-->
+            <!--<modules>-->
+                <!--<module>../jericho-html</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
     </profiles>
 </project>
